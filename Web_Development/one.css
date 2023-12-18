@@ -1,0 +1,294 @@
+/* External CSS */
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+}
+
+
+
+.navbar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+
+.searchbar {
+    float: right;
+    color: white;
+    padding: 12px 45px;
+}
+
+.navbar input {
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+}
+
+.navbar li a:hover {
+    color: red;
+}
+
+
+header {
+    border: 10px solid green;
+    padding: 20px;
+    margin: auto;
+    width: 1100px;
+}
+
+
+img {
+    margin: auto;
+    display: block;
+    width: 320px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+.box {
+    border: 10px solid black;
+    background-color: grey;
+    margin: 15px 0px;
+    padding: 23px;
+    width: 33%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container {
+    margin: auto;
+    width: 1200px;
+}
+
+.para {
+    /* class */
+    box-sizing: border-box;
+    border: 5px solid rgb(0, 225, 255);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+    color: rgb(1 253 106);
+    background-color: rgb(119 111 116);
+
+    /* web safe font */
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 2em;
+
+}
+
+
+
+#para {
+    /* id */
+
+    box-sizing: border-box;
+    margin: auto;
+    padding: 140px 10px;
+
+    color: #000000;
+    background-color: aqua !important;
+    font-weight: bolder;
+    font-size: larger;
+    font-style: italic;
+    /* background-color: black; */
+
+    height: 800px;
+    width: 1200px;
+
+    /* border-width: 40px; */
+    border-top: 20px;
+    border-left: 10px;
+    border-right: 20px;
+    border-bottom: 10px;
+
+
+    /* border: 20px solid rgb(3, 3, 3); */
+    /* border: 20px; */
+    border-style: solid;
+    border-color: rgb(214, 35, 35);
+
+    border-radius: 5px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+
+    background-image: url('https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg');
+    background-repeat: repeat-x repeat-y;
+    background-position: center, center;
+}
+
+.third {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+    border: 11px solid rgb(1, 6, 4);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+
+}
+
+.one {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+    border: 30px double darkred;
+    padding: 34px 19px;
+
+    /* margin: 34px 50px; */
+    /* margin: auto 33px; */
+    margin: auto;
+
+
+    border-radius: 20px;
+    width: 1100px;
+
+}
+
+.two {
+    box-sizing: border-box;
+    margin: 33px auto;
+    padding: 20px 10px;
+
+    background-color: beige;
+
+
+    /* border-width: 10px; border size, style, color */
+    border: 20px;
+    border-color: #172005;
+    border-style: double;
+    border-radius: 20px;
+}
+
+#data {
+    border: 10px double rgb(237, 20, 20);
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 40px 20px;
+    background-color: #e2faad;
+}
+
+#a {
+    float: left;
+    width: 49.5%;
+    padding: 30px 35px;
+    clear: left;
+}
+
+#b {
+    float: right;
+    padding: 10px 30px;
+    width: 49.5%;
+}
+
+#c {
+    clear: both;
+    /* float: left;
+    width: 50% */
+    clear: both;
+}
+
+.btn {
+    /* border: none ; */
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    background-color: rgb(181, 244, 244);
+}
+
+
+/* display: none; Invisible */
+/* display: block; part comes in new line. inline to block */
+/* display: inline; block to inline*/
+/* display: inline block; make block with inline properties */
+/* display: list item; make list */
+/* display: initial; gives initial property */
+/* display: inherit; Picks up parent property e.g. span[inline] used in p tag[block] */
+
+
+
+
+
+
+.boxc {
+    border: 4px solid red;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+
+
+
+
+/* The default position is static */
+/* position:relative; left :50px moves 50px from original position toward right */
+
+/* position:fixed; the value will not change its position even having motion properties */
+
+/* position:absolute; works like fixed but works like its parent in which it is situated. position relative should be used in parent whereas absolute is used in the value */
+
+
+
+/* relative: Positions the element relative to its normal positon and will leave a gap at its normal position */
+#box3 {
+    position: relative;
+    top: 34px;
+    left: 34px;
+}
+
+/* position: absolute;
+
+absolute: Positions the element relative to the positon of its first parent
+
+An element with the absolute position will move according to the position of its parent element.
+
+In the absence of any parent element, the HTML element will be placed relative to the page. */
+
+#box4 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+/* position: fixed;
+An element with position:fixed; will remain stuck to a specific position even after the page is scrolled.
+This position property is used when we want to keep an HTML element at a fixed spot no matter where on the page the user is.
+
+fixed: Positions the element relative to the browser window*/
+#box5 {
+    position: fixed;
+    right: 4px;
+}
+
+/* position: sticky;
+It is a hybrid of relative and fixed position.
+An HTML element with position:sticky; will just sit there until a given position offset is met. */
+
+/* sticky: Positions the element relative to the users scroll position */
+#box6 {
+    position: sticky;
+    top: 3px;
+}

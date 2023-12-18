@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lugrasimo";
+  background-image: linear-gradient(to right, white, grey);
+  overflow: scroll;
+}
+
+.navbar {
+  margin: 2px;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  background: rgba(245, 245, 245, 0.553);
+  position: relative;
+  box-shadow: 0px 20px 10px rgb(83, 80, 80);
+}
+
+nav {
+  width: 95%;
+  margin: auto;
+  padding: 20px, 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  border-radius: 100px;
+  box-shadow: 10px 10px 10px rgb(70, 69, 69);
+}
+
+nav ul li {
+  text-align: center;
+  list-style: none;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  text-shadow: 5px 5px 10px rgb(106, 11, 55);
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(255, 0, 0);
+}
+
+.info {
+  margin: 40px;
+  padding: 40px;
+  font-size: 150%;
+  text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.566);
+}
+
+.info span {
+  text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.566);
+  color: rgba(230, 31, 31, 0.909);
+  font-size: 200%;
+}
+.info strong {
+  font-size: 200%;
+}
+
+.btn a {
+  display: inline-block;
+  margin-left: 10%;
+  color: rgb(255, 255, 255);
+  padding: 1% 1%;
+  background: rgb(0, 0, 0);
+  border-radius: 80%;
+  font-size: 25px;
+  text-decoration: none;
+  box-shadow: 20px 20px 20px grey;
+}
+
+.btn a:hover {
+  background-color: #6d2802;
+}
+
+.pic {
+  width: 35%;
+  height: 81%;
+  position: absolute;
+  bottom: 0px;
+  right: 5%;
+  box-shadow: 50px 50px 70px rgba(72, 55, 55, 0.874);
+}
+
+.pic:hover {
+  box-shadow: -70px 50px 90px rgba(0, 0, 0, 0.637);
+  transform: translate(15%);
+  transition: 1s;
+}
+
+.social {
+  padding: 7% 7%;
+}
+
+.social a {
+  font-size: 400%;
+  margin-right: 5%;
+}
+
+.social a:hover {
+  background-color: rgba(213, 213, 212, 0.749);
+  border-radius: 40%;
+  box-shadow: 20px 20px 50px black;
+}
+
+#linkedin:hover {
+  background-color: #0a66c2;
+}
+#github:hover {
+  background-color: white;
+}
+#hackerrank:hover {
+  background-color: #0b9e0b;
+}
+#twitter:hover {
+  background-color: #00acee;
+}

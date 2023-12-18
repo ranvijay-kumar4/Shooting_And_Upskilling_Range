@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- heading starts from h1 to h6 -->
+    <h1>
+        headings upto <h6>....</h6>
+    </h1>
+    <!-- paragraph tag denoted by <p> xyz </p> Lorem is used as shortcut for machine paragraph for no of lines for eg lorem*2 -->
+    <p>paragrph and lorem is used to write unknown pragraph Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Odit, ea in quam veritatis explicabo laborum commodi at ipsam deleniti! Commodi dolore corporis vitae reiciendis
+        deserunt cupiditate reprehenderit quo in aut!
+        Dolore soluta doloribus aut quo officiis distinctio explicabo, et reprehenderit cupiditate sunt, alias in quasi
+        sapiente exercitationem autem accusantium quos eos, nostrum nihil nam dolorem fugit doloremque. Tempora,
+        exercitationem deleniti.</p>
+
+    <p>Entities are used to display Reserved character, special character, emojis, symbols</p>
+    <!---Syntax for Entities  &entity_name;, &#entity_number;-->
+
+
+
+    <!--bold andstrong is used to mark any coming word bold  -->
+    <b>is used for bold</b>
+    <strong>name is different but work is same</strong>
+
+    <!-- i and em is used to mark any coming word italic type -->
+    <i>is used for italic</i>
+    <em>name is different but work is same means emphasis text</em>
+
+    <!-- size of coming characters wil get small than the other words -->
+    <small>text will become small than others</small>
+
+    <!-- Sub is for subscript -->
+    19<sub>is used to subscript exponent value</sub>
+
+    <!-- Sup is for superscript -->
+    10<sup>is used to superscript </sup>
+
+    <!-- hr is used for horizontal line -->
+    <hr>
+
+    <!-- ol tag is used to make ordered list in which li tag is used for each list items type attribute can be used for -->
+    different list type </p>
+    <ol type="A">
+        <li>First Item</li>
+        <li>second item</li>
+        <li>third item</li>
+
+        <li><!--This is nesting oflist in which ul is inserted in ol-->
+
+            <ul>
+                <li>fsj</li>
+                <li>jgs</li>
+                <li>dbhfsbh</li>
+            </ul>
+        </li>
+    </ol>
+    <hr>
+    <p>ul tag is used to make unordered list in which li tag is used for each list items type attribute can be used for
+        different list type </p>
+    <ul type="square">
+        <li>First Item</li>
+        <li>second item</li>
+        <li>third item</li>
+    </ul>
+    <hr>
+    <!-- Anchor tag is used for tagging any website link within " xyz.com ">XYZ further on target attribute is used for opening of the anchored tag in tab either self, parent blank(new),etc. -->
+    <a href="https://www.google.com" target="_blank">Google</a>
+
+    <br>
+
+    <!-- file should be in the same folder of website, path is written in the href .... -->
+    <a href="C.pdf"> c lang</a>
+
+    <!-- br tag is used for break or new line -->
+    <br>
+
+    <!-- img tag is used for images -->
+    <!-- image should be in the same folder of website, photo name is written in source, width and height attributes is used to change size of the photo. Generally it is suggested to change any one attribute either width or height as it automatically manages its pixel ratio.
+
+alt attribute is used to show what will be shown when there is  error in network or lag in the network or error in server or non existence of the image etc-->
+    <img src="bg1.jpg" alt="gadbad hai bawa" width="350" height="250">
+
+    <hr>
+
+    <!-- video tag is used for video  -->
+    <!-- video should be in the same folder of website, video name is written in source, width and height attributes is used to change size of the video. Generally it is suggested to change any one attribute either width or height as it automatically manages its pixel ratio -->
+    <!-- control attribute is used for making video controls visible and usable in user hands, instead of controls autoplay can be used for making video autoplay as the sites loaded
+
+loop attribute is used to replay or loop the video automatically
+
+muted attribute is used to mute the video when loaded untill unless user unmute it from controls
+
+poster attribute is used to give a overview of the video untill the video is played-->
+    <video src="1.Introduction to C Language.mp4" width="400" controls loop muted poster="bg1.jpg"></video>
+
+    <hr>
+    <!-- iframe tag is used to display other website in our website that is called embedding -->
+    <!-- <iframe src="" frameborder="0"></iframe> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HZsRjrYW-lk" title="YouTube video player"
+        frameborder="10"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+    <br>
+
+    <iframe src="https://www.apnikaksha.com" frameborder="0" width="560" height="700"></iframe>
+
+    <hr>
+
+    <!-- table tag is used to make table in which tr tag is used for every row in which td tag is used for data th tag is used for heading
+within tr tag rowspan attribute is used for merging of rows and colspan is used for merging of columns  -->
+
+    <!-- th is used for table heading -->
+    <!-- tbody is used for table content -->
+    <!-- tfoot is used for footer part -->
+
+    <!-- e.g.
+        <table> -->
+    <!-- heading
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>name</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+        -->
+
+    <!-- body
+            <tbody>
+                <tr>
+                    <td>Khusi </th>
+                        <td>82 </th>
+                            <td>467 </th>
+                                
+                            </tr>
+                        </tbody>
+                    -->
+
+    <!-- footer 
+            <tfoot>
+                <tr>
+                    <th rowspan="2">total</th>
+                    <th>3750</th>
+                </tr>
+            </tfoot>
+        </table> 
+    -->
+    <!-- there is no change in UI , it only written for structure -->
+
+    <br>
+
+
+
+    <table>
+        <!-- <td colspan="2">sum;180rs</td> -->
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll</th>
+                <th>Marks</th>
+            </tr>
+        <tbody>
+            <th>Khusi Bajaj</th>
+            <th>51</th>
+            <th>920</th>
+
+        </tbody>
+        </thead>
+    </table>
+
+    <!-- form tag is used for making form. two attributes used action and method
+    in action we put those data which we have to send to the server by giving server url
+in method it is a type by which we are sending message -->
+    <br>
+    <hr>
+
+    <!-- elements in form tag
+1. input, for inputing values. type attribute is used for it type="text", name attribute is used for it name="firstname", value attributes used for type. when type is radio or checkbox value have to write already whereas when vale is remained blank when taken by user -->
+    <div>Hello</div>
+    <span>Hi</span>
+    <p>Hellio there</p>
+    <form action="">
+        Name &nbsp; &nbsp; <input type="text" name="fname">
+        <br>
+        <input type="image">
+        <br>
+        <!-- Password input is same as text type input, the difference is in input the  type attribute will be password -->
+        Password <input type="password">
+        <br>
+        <fieldset>
+            <legend>Gender</legend>
+            <!-- <h5>Gender</h5> -->
+            <input type="radio" name="gender" id="male">
+            <table for="male">Male</table>
+
+
+            <input type="radio" name="gender" id="male">
+            <table for="female">Female</table>
+
+            <input type="radio" name="gender" id="male">
+            <table for="Transg">Transg</table>
+
+        </fieldset>
+        <br>
+        <!-- input the type attribte file for takin file input -->
+        <input type="file">
+
+        <br>
+        <br>
+        <input type="submit" value="Pay now"> &nbsp; <input type="reset">
+
+        <br>
+        <br>
+        <!-- textarea is used to take user input text of different sizes by using rows and columns  -->
+        <h4> Feedback</h4>
+        <br>
+        <textarea cols="50" rows="10"></textarea>
+    </form>
+
+    <!-- Select tag is used for giving user choices to select from by using option tag in select tag or by nesting of tags  -->
+    <br>
+
+    Select box is used
+    <select>
+        <option value="city"> City</option>
+        <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="goa">Goa</option>
+        <option value="shimla">Shimla</option>
+        <option value="uttarakhand">Uttarakhand</option>
+    </select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <tbody></tbody>
+    <thead></thead>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+/* 
+1. Box model - margin, padding, border, stacking, blocks
+2. Fonts - weight, size, controls
+3. Font - Weight, size, controls
+4. Colors - Font-color, Background-color, Border-color, Shadow, Shadow-color
+5. Selectors - CSS apply, By class, By ID, By Element
+React
+Bootstrap - Responsive, Using a Card, Using a Heading, Using a Form
+
+project- Zomato, Ecomm
+use Bootstrap card
+add your themes to card(colors, fonts,weights, selectors)
+positioning-absolute, relative
+responsiveness
+flex 
+grid
+animation
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+body {
+  background-color: aqua;
+}
+
+p{
+    border: 5px solid rgb(54, 218, 49);
+}
+
+p{
+    padding: 20px;
+    margin: 30px;
+}
+
+a:link{
+color: rgb(255, 1, 1);
+background-color: aliceblue;
+text-decoration: double;
+
+}
+/* a:link{
+
+    background-color: aqua;
+    color: black;
+    text-decoration: dotted;
+    display: inline-block;
+    padding: 20px, 25px;
+  }
+
+  a:visited{
+    color: blue;
+    background-color: beige;
+    display: inline-block;
+    padding: 20px, 25px;
+  }
+
+  a:hover{
+    color: yellow;
+    background-color: brown;
+  }
+
+  a:active{
+    color: pink;
+    background-color: aliceblue;
+  } */
+
+  
+  table,th,td{
+
+    padding: 3px;
+    margin: 3px;
+    border: 5px solid blue;
+    border-radius: 10px;
+    border-collapse: collapse;
+    border-style: inset;
+    border-spacing: 30px;
+  }
+  th,td{
+
+    background-color: beige;
+  }
+
+  /* td:nth-child(odd){
+
+    background-color: rgb(150, 17, 17);
+  }
+
+  tr:hover{
+    background-color: chocolate;
+  } */
+
+.para {
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+#para{
+    color:rgb(0, 66, 248);
+    border: 10px double rgb(229, 255, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
