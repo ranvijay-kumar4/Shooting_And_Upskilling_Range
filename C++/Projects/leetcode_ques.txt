@@ -7,7 +7,33 @@ Q 2. Counting Number of 1 Bits in a given Binary code.
 (https://leetcode.com/problems/number-of-1-bits/submissions/)
 
 Date : 22nd December 2023
-Q 1. Find the Two Sum from the Given Array
+Q 1. Find the Two Sum from the Given Array.
 (https://leetcode.com/problems/two-sum/submissions/)
 
+Date : 25th December 2023
+Q 1. Sort Colors / Sort 0's, 1's and 2's.
+(https://leetcode.com/problems/sort-colors/submissions/)
+
+Date : 26th December 2023
+Q 1. Finding Duplicate Number.
+(https://leetcode.com/problems/find-the-duplicate-number/submissions/)
+
 Date : 
+Q 1. 
+()
+
+Date :
+Q 1.
+()
+
+Date :
+Q 1.
+()
+
+Date :
+Q 1.
+()
+
+Date :
+Q 1.
+()
