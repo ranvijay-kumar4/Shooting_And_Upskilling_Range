@@ -1,39 +1,39 @@
 Date : 28th August 2023
-Q 1. Subtract the product and sum of digit of an integer.
+Q 1. Subtract the product and sum of digit of an integer. [1281]
 (https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/submissions/)
 
 Date : 28th August 2023
-Q 2. Counting Number of 1 Bits in a given Binary code. 
+Q 2. Counting Number of 1 Bits in a given Binary code. [191]
 (https://leetcode.com/problems/number-of-1-bits/submissions/)
 
 Date : 22nd December 2023
-Q 1. Find the Two Sum from the Given Array.
+Q 3. Find the Two Sum from the Given Array. [1]
 (https://leetcode.com/problems/two-sum/submissions/)
 
 Date : 25th December 2023
-Q 1. Sort Colors / Sort 0's, 1's and 2's.
+Q 4. Sort Colors / Sort 0's, 1's and 2's. [75]
 (https://leetcode.com/problems/sort-colors/submissions/)
 
 Date : 26th December 2023
-Q 1. Finding Duplicate Number.
+Q 5. Finding Duplicate Number. [287]
 (https://leetcode.com/problems/find-the-duplicate-number/submissions/)
 
-Date : 
-Q 1. 
+Date : 03rd January 2024
+Q 6. Peak element in a Mountain array. [852]
+(https://leetcode.com/problems/peak-index-in-a-mountain-array/submissions/)
+
+Date : 09th January 2024
+Q 7. Search in a Sorted array. [33]
+(https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/)
+
+Date :
+Q 8.
 ()
 
 Date :
-Q 1.
+Q 9.
 ()
 
 Date :
-Q 1.
-()
-
-Date :
-Q 1.
-()
-
-Date :
-Q 1.
+Q 10.
 ()
