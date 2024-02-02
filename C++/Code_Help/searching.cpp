@@ -13,6 +13,8 @@ int binary__search(vector<int> arr, int s, int e, int key);
 int low_bound(vector<int> arr, int k);
 int up_bound(vector<int> arr, int k);
 int pivot(vector<int> arr);
+int nrly_sorted(vector<int> arr, int key);
+int division(int dividend, int divisor);
 
 int main()
 {
@@ -61,7 +63,7 @@ int main()
 
     // --------------------------------------------------------------------------
     // Counting Numbers of 0's and 1's in the array.
-    // -----------------------------------------------
+    // ---------------------------------Without Function
     // int array[]={1,0,1,1,0,1,0,1,1,0};
     // int size = 9 ;
     // int zero_count = 0, one_count = 0;
@@ -80,7 +82,8 @@ int main()
 
     // cout << "Number of 0's are : " << zero_count << endl ;
     // cout << "Number of 1's are : " << one_count << endl ;
-    // ---------------------------------------
+    
+    // ---------------------------------------With Function
     // int array[]={1,0,1,1,0,1,0,0,1,1};
     // int size = 10 ;
     // int count_z = 0, count_o = 0;
@@ -394,14 +397,157 @@ int main()
     // --------------------------------------------------------------------------
     // Finding Square Root of any number.
     // -----------------------------------------------------
+    // vector<int> arr{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    // int s = 0, e = arr.size() - 1, m = s + (e - s) / 2, key = 10;
+    // double precision, step = 0.1, ans;
+    // cin >> precision;
+    // while (s <= e)
+    // {
+    //     if (m * m == key)
+    //     {
+    //         ans = m;
+    //         break;
+    //     }
+    //     else if (m * m > key)
+    //     {
+    //         e = m - 1;
+    //     }
+    //     else if (m * m < key)
+    //     {
+    //         ans = m;
+    //         s = m + 1;
+    //     }
 
+    //     m = s + (e - s) / 2;
+    // }
+
+    // for (double i = 0; i < precision; i++)
+    // {
+    //     for (double j = ans; j * j <= key; j = j + step)
+    //     {
+    //         ans = j;
+    //     }
+    //     step = step / 10;
+    // }
+
+    // cout << ans;
 
     // --------------------------------------------------------------------------
+    // Binary Search on 2D array/Vector.
     // -----------------------------------------------------
+    // arr[5][4] {{1,2,3,4}{5,6,7,8}{1,2,3,4}{5,6,7,8}{1,2,3,4}}
+    // row = mid/cols
+    // c*i+j
+    // col = mid%cols
+    // arr[row][col]<target == RS
+    // arr[row][col]>target == LS
+
+    // int arr[5][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}, {17, 18, 19, 20}};
+    // int row = 5, rowIndx, colIndx, col = 4, s = 0, e = row * col - 1, m = s + (e - s) / 2, key = 19;
+    // while (s <= e)
+    // {
+    //     rowIndx = m / col;
+    //     colIndx = m % col;
+
+    //     if (arr[rowIndx][colIndx] == key)
+    //     {
+    //         cout << rowIndx << " " << colIndx << endl;
+    //         break;
+    //     }
+    //     else if (arr[rowIndx][colIndx] < key)
+    //     {
+    //         s = m + 1;
+    //     }
+    //     else if (arr[rowIndx][colIndx] > key)
+    //     {
+    //         e = m - 1;
+    //     }
+    //     else
+    //     {
+    //         cout << -1;
+    //     }
+
+    //     m = s + (e - s) / 2;
+    // }
+
     // --------------------------------------------------------------------------
+    // Binary Search in a Nearly Sorted array.
     // -----------------------------------------------------
+
+    // ------------------------------------------Without Function
+    // vector<int> arr{10, 3, 40, 20, 50, 80, 70};
+    // int s = 0, e = arr.size() - 1, m = s + (e - s) / 2, key = 10;
+
+    // while (s <= e)
+    // {
+    //     if (arr[m] == key)
+    //     {
+    //         cout << m;
+    //         break;
+    //     }
+    //     else if (arr[m - 1] == key)
+    //     {
+    //         cout << m - 1;
+    //         break;
+    //     }
+    //     else if (arr[m + 1] == key)
+    //     {
+    //         cout << m + 1;
+    //         break;
+    //     }
+    //     else if (arr[m] > key)
+    //     {
+    //         e = m - 2;
+    //     }
+    //     else if (arr[m] < key)
+    //     {
+    //         s = m + 2;
+    //     }
+    //     m = s + (e - s) / 2;
+    // }
+
+    // ------------------------------------------With Function
+    // vector<int> arr{10, 3, 40, 20, 50, 80, 70};
+    // int key = 20;
+    // cout << nrly_sorted(arr, key);
+
     // --------------------------------------------------------------------------
+    // Divide two numbers using binary search
     // -----------------------------------------------------
+
+    // ------------------------------------------Without Function
+    // int dividend = 22, divisor = -7, ans = 0, s = 0, e = dividend, m = s + (e - s) / 2;
+    // while (s <= e)
+    // {
+    //     if (abs(m * divisor) == abs(dividend))
+    //     {
+    //         ans = m;
+    //         break;
+    //     }
+    //     else if (abs(m * divisor) > abs(dividend))
+    //     {
+    //         e = m - 1;
+    //     }
+    //     else if (abs(m * divisor) < abs(dividend))
+    //     {
+    //         ans = m;
+    //         s = m + 1;
+    //     }
+
+    //     m = s + (e - s) / 2;
+    // }
+    // if (dividend < 0 && divisor < 0 || dividend > 0 && divisor > 0)
+    // {
+    //     cout << ans;
+    // }
+    // else
+    // {
+    //     cout << -ans;
+    // }
+
+    // ------------------------------------------With Function
+    // cout << division(dividend, divisor);
+
     // --------------------------------------------------------------------------
     // --------------------------------------------------------------------------
 
@@ -586,4 +732,40 @@ int pivot(vector<int> arr)
         m = s + (e - s) / 2;
     }
     return s;
+};
+
+int nrly_sorted(vector<int> arr, int key)
+{
+    int s = 0, e = arr.size() - 1, m = s + (e - s) / 2;
+
+    while (s <= e)
+    {
+        if (arr[m] == key)
+        {
+            return m;
+        }
+        else if (arr[m + 1] == key)
+        {
+            return m + 1;
+        }
+        else if (arr[m - 1] == key)
+        {
+            return m - 1;
+        }
+        else if (arr[m] > key)
+        {
+            e = m - 2;
+        }
+        else if (arr[m] < key)
+        {
+            s = m + 2;
+        }
+        m = s + (e - s) / 2;
+    }
+    return -1;
+};
+
+int division(int dividend, int divisor)
+{
+    int s = 0, e = dividend, m = s + (e - s) / 2;
 };
