@@ -30,7 +30,7 @@ body {
 }
 
 nav {
-    max-width: 60vw;
+    max-width: 100%;
     justify-content: space-between;
     margin: auto;
     display: flex;
@@ -43,11 +43,13 @@ nav img {
     width: 150px;
     position: relative;
     z-index: 10;
+    left: 90%;
 }
 
 nav button {
     position: relative;
     z-index: 10;
+    right: 90%;
 }
 
 .word {
@@ -85,6 +87,8 @@ nav button {
 .seperation {
     height: 7px;
     background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
 }
 
 .btn {
@@ -136,34 +140,146 @@ nav button {
     max-width: 70vw;
     margin: auto;
     color: white;
-   }
+}
 
 .sec-Img {
     position: relative;
 }
 
 .sec-Img img {
-    width: 30vw;
+    width: 555px;
     position: relative;
     z-index: 10;
 }
 
 .sec-Img video {
     position: absolute;
-    top: 50px;
+    top: 51px;
     right: 0;
+    width: 555px;
 }
 
-section.first > div {
+section.first>div {
     display: flex;
     flex-direction: column;
+    padding: 34px 0;
 }
 
-section.first > div :nth-child(1){
+section.first>div :nth-child(1) {
     font-size: 48px;
     font-weight: bolder;
 }
 
-section.first > div :nth-child(2){
+section.first>div :nth-child(2) {
     font-size: 24px;
+}
+
+.faq {
+    color: white;
+    background-color: black;
+    padding: 34px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    font-size: 30px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 60vw;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.faq-box:hover {
+    background-color: #414141;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+footer .question {
+    padding: 34px 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+.footer a {
+    font-size: 15px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1300px) {
+
+    nav {
+        max-width: 90vw;
+    }
+    .footer {
+        display: grid;
+        gap: 25px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .sec-Img img {
+        width: 310px;
+    }
+
+    .sec-Img video {
+        width: 310px;
+    }
+
+    .word> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .word> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .word> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .word-button{
+        flex-direction: column;
+    }
+
+    .faq h2 {
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
 }
