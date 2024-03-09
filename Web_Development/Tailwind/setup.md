@@ -30,9 +30,8 @@ Step 4 : Create src/input.css and include :
 @tailwind utilities;
 ```
 
-Step 5 : link src/output.css inside index.html file outside the src folder
-
-Step 6 : Run the following Command in the terminal
+Step 5 : Run the following Command in the terminal
 ```
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 ```
+Step 6 : link src/output.css inside index.html file outside the src folder
