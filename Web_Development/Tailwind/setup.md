@@ -1,5 +1,9 @@
 ## How To setup Tailwind CSS
 
+from the following documentation link :
+
+## https://tailwindcss.com/docs/installation
+
 Step 1 : Edit and save Node.js path to environment Variable.
 
 Step 2 : Run the following command in terminal
