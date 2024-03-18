@@ -1,3 +1,55 @@
+
+
+// Word vs Keyword ✅
+
+// var let const ✅
+
+// Hoisting (using variable before decleration : shifts to the top and provides undefined as output)✅
+
+// Undefined (Existing but unknown) vs Not Defined(Non-existing)✅
+
+// Hosting vs Hoisting ✅
+
+// data types in js ✅
+
+// primitive and reference {having brackets (), {}, [] } ✅
+
+// conditionals - if else ✅
+
+// Loop - for while ✅
+
+// Functions arguments are real values and parameters are containers ✅
+
+// Arrays ✅
+
+// Push @ending, Pop @ending, Shift removes @beginning, Unshift adds @beginning, Splice from any index to number of deletions ✅
+
+// Objects holds details in key value pair ✅
+
+
+// ------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // -------------------CHAPTER 1-------------------
 console.log(" Hello World ");
 console.log('Ranvijay Kumar');
@@ -46,11 +98,11 @@ const student = {
 
 console.log(student)
 
-    // -------------------CHAPTER 2-------------------
+// -------------------CHAPTER 2-------------------
 
-    // Single Line Comment
-    /**Multi Line Comment*/
-     let p = 2;
+// Single Line Comment
+/**Multi Line Comment*/
+let p = 2;
 let q = 3;
 console.log("p + q :", p + q);
 console.log("p - q :", p - q);
@@ -325,16 +377,16 @@ trr = crr.filter((val) => {
 });
 console.log(trr);
 
-/**Take a number n as input from user. 
+/**Take a number n as input from user.
  * Create an array of numbers from 1 to n.
- * 
+ *
  * Use the reduce method to calculate sum of all numbers in the array.
  * use the reduce method to calcuate product of all numbers in the array*/
 
 // n = prompt("Enter the numbers : ");
 // var crr =[];
 // for (let I = 0; I < n; I++) {
-//     crr[I-1] = I;   
+//     crr[I-1] = I;
 // }
 // console.log(crr);
 
