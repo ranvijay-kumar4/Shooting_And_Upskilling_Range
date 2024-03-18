@@ -1,0 +1,23 @@
+✅## Opening and closing sidebar  Ctrl + B 
+
+✅## Select word   Ctrl + D
+
+✅## Code folding   Ctrl + Shift + [
+
+✅## Code unfolding  Ctrl + Shift + ]
+
+✅## Copy line up/down  Shift + Alt + Up/Down
+
+✅## Quick file open   Ctrl + P 
+
+✅## Toggle terminal   Ctrl+backtick (Ctrl+`)
+
+✅## Switch Tabs  Ctrl+1, Ctrl+2, Ctrl+3
+
+✅## Delete line   Ctrl + Shift + K
+
+✅## Move line   Alt + Up/Down arrow
+
+✅##
+
+✅##
