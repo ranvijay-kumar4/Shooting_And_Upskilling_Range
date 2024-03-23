@@ -3,6 +3,7 @@
 Step 1 : Reach to the package.json file using cd >>/
 
 Step 2 : Run the following command
+## npm install is optional in nature can be skipped
 ```
 npm install 
 npm run dev
