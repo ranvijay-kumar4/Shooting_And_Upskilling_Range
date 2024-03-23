@@ -105,3 +105,49 @@ npm run start
 ```
 
 ## Directly it will launch to the preview website
+
+### Installing Tailwind CSS inside the react folder
+
+## Refferred Link
+```
+https://tailwindcss.com/docs/installation/framework-guides
+```
+
+Step 1 : Reach the React forlder by cd command after vite@latest command
+
+Step 2 : Run the following command : D means dependencies inside package.json
+NPX generates Tailwind.css file
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+Step 3 : Configure the created Tailwind.css file 
+```
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+Step 4 : Add the following code in Index.css at the top of file
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+Step 5 : Now run the react file as usual
+```
+npm run dev
+
+or
+
+npm run dev -- --host
+```
