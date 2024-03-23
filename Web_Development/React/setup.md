@@ -1,3 +1,37 @@
+# Run already created react file
+
+Step 1 : Reach to the package.json file using cd >>/
+
+Step 2 : Run the following command
+```
+npm install 
+npm run dev
+```
+or 
+``` 
+npm i 
+npm run dev
+```
+## If want to open in smartphone
+
+Step 1 : First edit the package.json file 
+
+```
+script >> dev >>> add "vite --host" at "vite"
+```
+
+Step 2 : Run the following code at the place of "npm run dev" in the terminal. 
+```
+npm run dev -- --host
+```
+
+Step 3 : Open the local server on System and Open the Network server in smartphone's browser.
+
+
+
+
+
+
 ## How To setup React.js 
 
 ## with Vite for fast loading in system.
