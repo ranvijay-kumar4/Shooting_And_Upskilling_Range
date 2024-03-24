@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Card from './Components/Card'
 
 function App() {
   let [counter, setCounter] = useState(10);
@@ -29,8 +30,11 @@ function App() {
       <button
         onClick={RemoveValue}>Remove Value {counter}</button>
 
+      <h1 className='bg-slate-100 text-black rounded-xl m-4'>Ranvijay</h1>
 
-
+      <Card />
+      <br />
+      <Card />
     </>
   )
 }
