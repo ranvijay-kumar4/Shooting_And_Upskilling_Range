@@ -49,7 +49,8 @@ Step 3 : Reach to the current folder by using
 ```
 cd _Folder_Name 
 ```
-
+###
+###
 Step 4 : Run the following command in terminal
 ```
 npm create vite@latest
@@ -119,6 +120,7 @@ Step 2 : Run the following command : D means dependencies inside package.json
 NPX generates Tailwind.css file
 ```
 npm install -D tailwindcss postcss autoprefixer
+
 npx tailwindcss init -p
 ```
 
@@ -136,7 +138,7 @@ export default {
   plugins: [],
 }
 ```
-Step 4 : Add the following code in Index.css at the top of file
+Step 4 : Add the following code in Index.css at the top of file which is present in src folder 
 ```
 @tailwind base;
 @tailwind components;
