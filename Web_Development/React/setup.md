@@ -68,9 +68,14 @@ Step 9 : Select a Variant
 
 Step 10 : Enter into the Project/Folder by "cd ___" command
 
-Step 11 : Search the package.json file using "ls" command
+Step 11 : Run the following command 
+```
+npm i   or npm install
+```
 
-Step 12 : Run the following command to launch
+Step 12 : Search the package.json file using "ls" command
+
+Step 13 : Run the following command to launch or skip to the tailwind installation part Step 2 directly.
 ```
 npm run dev
 ```
