@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: radial-gradient(rgb(78, 34, 17),rgb(0, 0, 0));
+}
+
+.calendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 4px;
+    /* box-shadow: 4px 7px 5px; */
+    filter: drop-shadow(4px 4px 50px white);
+}
+
+#left, #right{
+    height: 40vh;
+    width: 17vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#left{
+    background-color: rgb(20, 255, 251);
+}
+#right{
+    background-color: rgb(103, 218, 32);
+}
+
+#date{
+    font-size: 90px;
+    font-weight: 600;
+}
+#day, #year{
+    font-size: 30px;
+}
+#month{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
