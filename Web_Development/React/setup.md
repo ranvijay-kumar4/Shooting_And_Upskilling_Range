@@ -3,7 +3,7 @@
 Step 1 : Reach to the package.json file using cd >>/
 
 Step 2 : Run the following command
-## npm install is optional in nature can be skipped
+### npm install is optional in nature can be skipped
 ```
 npm install 
 npm run dev
@@ -33,7 +33,7 @@ Step 3 : Open the local server on System and Open the Network server in smartpho
 
 
 
-## How To setup React.js 
+# How To setup React.js with VITE
 
 ## with Vite for fast loading in system.
 
@@ -50,7 +50,7 @@ Step 3 : Reach to the current folder by using
 cd _Folder_Name 
 ```
 ###
-###
+
 Step 4 : Run the following command in terminal
 ```
 npm create vite@latest
@@ -83,7 +83,7 @@ npm run dev
 
 <!-- ------------------------------------------------------------------------ -->
 
-## With CRA (Create React App) takes longer time
+### With CRA (Create React App) takes longer time
 
 from the following documentation link :
 
@@ -112,7 +112,7 @@ npm run start
 
 ## Directly it will launch to the preview website
 
-### Installing Tailwind CSS inside the react folder
+# Installing Tailwind CSS inside the react folder
 
 ## Refferred Link
 ```
