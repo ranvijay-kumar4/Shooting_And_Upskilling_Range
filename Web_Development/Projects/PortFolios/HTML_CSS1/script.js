@@ -33,7 +33,7 @@ function myMenuFunction(){
 
 /* ----- TYPING EFFECT ----- */
  var typingEffect = new Typed(".typedText",{
-    strings : ["Designer","Youtuber","Developer"],
+    strings : ["Front-end Developer","Web Developer"],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,
@@ -115,3 +115,25 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive)
+
+/* ----- Mouse tracking event ----- */
+
+const firecontainer = document.createElement("div");
+firecontainer.className = "fire-container";
+document.body.appendChild(firecontainer);
+
+document.addEventListener("mousemove", function(event) {
+  createFire(event.clientX, event.clientY);
+});
+
+function createFire(x, y) {
+  const fire = document.createElement("div");
+  fire.className = "fire";
+  fire.style.left = x + "px";
+  fire.style.top = y + "px";
+  firecontainer.appendChild(fire);
+
+  setTimeout(() => {
+    fire.remove();
+  }, 100);
+}
