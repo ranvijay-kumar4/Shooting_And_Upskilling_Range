@@ -9,5 +9,6 @@
         "iostream": "cpp",
         "random": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "liveServer.settings.port": 5501
 }
