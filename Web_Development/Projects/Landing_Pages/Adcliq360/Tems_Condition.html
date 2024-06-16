@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!----- Bootstrap Icon-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        <!-----stylesheet-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="service-megamenu.css">
+          <link rel="stylesheet" href="bg-updates.css">
+
+        <title>Adcliq360</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/adcliq360-favicon/favicon-32x32.png" width="32px"
+            height="auto">
+        <style>
+        
+        .submenu{
+    background-color: white;
+    position: absolute;
+   
+    right: 100%;
+    top: 10px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    border-radius: 30px;
+    opacity: 0; 
+    transition: 1s;
+    visibility: hidden;
+    box-shadow: 1px 1px 20px #abb4bb;
+}
+
+
+.submenu-menu{
+    background-color: white;
+    position: absolute;
+    right: 90%;
+    top: -10px;
+    width: 142%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    border-radius: 30px;
+    opacity: 0; 
+    transition: 1s;
+    visibility: hidden;
+    box-shadow: 1px 1px 20px #abb4bb;
+
+}
+
+.megamenu-items li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.submenu-items li:hover .submenu-menu {
+    opacity: 1;
+    visibility: visible;
+
+}
+        
+            /*------------Navigation bar Fixed -----------------*/
+            .nav-fix {
+                top: 0;
+                position: fixed;
+                width: 100%;
+                z-index: 999;
+
+            }
+
+            .banner-fix {
+                margin-top: 10rem !important;
+            }
+            
+            
+.services-megamenu:hover .megamenu {
+    background:#fff;
+}
+
+@media screen and (max-width: 992px){
+   
+    .services-megamenu:hover .megamenu {
+        visibility:hidden;
+    }
+.services-megamenu .megamenu .megamenu-items,  .services-megamenu i { 
+    visibility: hidden;
+}
+
+        </style>
+    </head>
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-fix">
+        <div class="container service-container">
+            <a class="navbar-brand" href="index"><img src="assets/Logos/logo black.png" alt="" class="img-fluid"
+                    width="185px" height="auto"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-md-auto mb-2 mb-lg-0 me-md-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-md-3" href="about-adcliq360.html">About</a>
+                    </li>
+                          <li class="nav-item services-megamenu">
+            <a class="nav-link active px-md-3" href="services">Services <i class="fa-solid fa-caret-down"
+                style="color: #000000;"></i></a>
+             <div class="megamenu">
+              <div class="megamenu-items">
+                <!-- <h4>Hello World</h4> -->
+                <ul>
+                  <li><a href="Social-media">Social Media Management</a>
+                    <div class="submenu">
+                      <div class="submenu-items">
+                        <!-- <h4>Hello World</h4> -->
+                        <ul>
+                          <li><a href="Social-media">Why Choose US ?</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="Social-media">• Expertise &amp; Experience</a></li>
+                                  <li><a href="Social-media">• Customised Solutions</a></li>
+                                  <li><a href="Social-media">• Proven Results</a></li>
+                                  <li><a href="Social-media">• Client Approach</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="digital-ad">Key Services offered</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="Social-media">• Social Media Strategy Development</a></li>
+                                  <li><a href="Social-media">• Content Creation And Management</a></li>
+                                  <li><a href="Social-media">• Social Media Advertising</a></li>
+                                  <li><a href="Social-media">• Community Management</a></li>
+                                  <li><a href="Social-media">• Analytics And Reporting</a></li>
+                                  <li><a href="Social-media">• Influencer Marketing</a></li>
+                                  <li><a href="Social-media">• Training And Consultancy</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="Social-media">Our SMM Services</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="Social-media">• Facebook Marketing</a></li>
+                                  <li><a href="Social-media">• Instagram Marketing</a></li>
+                                  <li><a href="Social-media">• YouTube Video Marketing</a></li>
+                                  <li><a href="Social-media">• LinkedIn B2B Marketing</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="digital-ad">Digital Ads OTT</a>
+                    <div class="submenu">
+                      <div class="submenu-items">
+                        <!-- <h4>Hello World</h4> -->
+                        <ul>
+                          <li><a href="Social-media">Why Choose US ?</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="digital-ad">• Expertise</a></li>
+                                  <li><a href="digital-ad">• Advanced Targeting</a></li>
+                                  <li><a href="digital-ad">• Innovative Solutions</a></li>
+                                  <li><a href="digital-ad">• Dynamic Ad Placement</a></li>
+                                  <li><a href="digital-ad">• Customized Campaigns</a></li>
+                                  <li><a href="digital-ad">• Comprehensive Reporting</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="digital-ad">Services offered</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>digital-ad
+                                  <li><a href="digital-ad">• Targeted Advertising</a></li>
+                                  <li><a href="digital-ad">• Increased Brand Awareness</a></li>
+                                  <li><a href="digital-ad">• Engaged Viewers</a></li>
+                                  <li><a href="digital-ad">• Multi-Screen Targeting</a></li>
+                                  <li><a href="digital-ad">• Data-Driven Campaigns</a></li>
+                                  <li><a href="digital-ad">• Performance Measurement</a></li>
+                                  <li><a href="digital-ad">• Premium Inventory Access</a></li>
+                                  <li><a href="digital-ad">• Campaign Management Expertise</a></li>
+                                  <li><a href="digital-ad">• Omnichannel Marketing Integration</a></li>
+                                  <li><a href="digital-ad">• Scalable Solutions</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="webDevelopment">Web Development</a>
+                    <div class="submenu">
+                      <div class="submenu-items">
+                        <!-- <h4>Hello World</h4> -->
+                        <ul>
+                          <li><a href="webDevelopment">Why Choose US ?</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="webDevelopment">• Expertise &amp; Experience</a></li>
+                                  <li><a href="webDevelopment">• Customised Solutions</a></li>
+                                  <li><a href="webDevelopment">• Client Approach</a></li>
+                                  <li><a href="webDevelopment">• Proven Results</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="webDevelopment">Key Services offered</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="webDevelopment">• Custom Website Development
+                                    </a></li>
+                                  <li><a href="webDevelopment">• E-Commerce Development</a></li>
+                                  <li><a href="webDevelopment">• CMS Development</a></li>
+                                  <li><a href="webDevelopment">• Responsive Web Design</a></li>
+                                  <li><a href="webDevelopment">• Web Application Development</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="webDevelopment">What You can build</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="webDevelopment">• Websites</a></li>
+                                  <li><a href="webDevelopment">• Web Portals</a></li>
+                                  <li><a href="webDevelopment">• Web Apps</a></li>
+                                  <li><a href="webDevelopment">• Online Stores</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="seo-adcliq360">Search Engine Optimization</a>
+                    <div class="submenu">
+                      <div class="submenu-items">
+                        <!-- <h4>Hello World</h4> -->
+                        <ul>
+                          <li><a href="seo-adcliq360">Why Choose US ?</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="seo-adcliq360">• Consult Our Experts!</a></li>
+                                  <li><a href="digital-ad">• Do More Than You Thought Possible!</a></li>
+                                  <li><a href="webDevelopment">• Achieve by optimising, personalising</a></li>
+
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="digital-ad">Steps for SEO </a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="seo-adcliq360">• Website Audit</a></li>
+                                  <li><a href="seo-adcliq360">• Keyword Research</a></li>
+                                  <li><a href="seo-adcliq360">• On-Page Optimization</a></li>
+                                  <li><a href="seo-adcliq360">• Competitor Analysis</a></li>
+                                  <li><a href="seo-adcliq360">• Quality Content Creation</a></li>
+                                  <li><a href="seo-adcliq360">• Technical SEO</a></li>
+                                  <li><a href="seo-adcliq360">• Local SEO</a></li>
+                                  <li><a href="seo-adcliq360">• Link Building</a></li>
+                                  <li><a href="seo-adcliq360">• Analytics And Monitoring</a></li>
+                                  <li><a href="seo-adcliq360">• Result</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="performance-marketing">Performance Marketing</a>
+                    <div class="submenu">
+                      <div class="submenu-items">
+                        <!-- <h4>Hello World</h4> -->
+                        <ul>
+                          <li><a href="performance-marketing">Why Choose US ?</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="performance-marketing">• Data-Driven Decisions</a></li>
+                                  <li><a href="performance-marketing">• Focus on Conversions</a></li>
+                                  <li><a href="performance-marketing">• Transparent Reporting</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="performance-marketing">Performance Marketing Channels</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="performance-marketing">• Lead Based Campaigns
+                                    </a></li>
+                                  <li><a href="performance-marketing">• Benefits Of Lead-Based Campaigns</a></li>
+                                  <li><a href="performance-marketing">• Qualified Lead Based Campaigns</a></li>
+                                  <li><a href="performance-marketing">• Benefits Of Tracking CPQL</a></li>
+                                  <li><a href="performance-marketing">• Installation Based Campaigns</a></li>
+                                  <li><a href="performance-marketing">• Benefits Of CPI</a></li>
+                                  <li><a href="performance-marketing">• Mille Based Campaigns</a></li>
+                                  <li><a href="performance-marketing">• Benefits Of CPM</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="digital-outdoor">Digital Outdoor</a>
+                    <div class="submenu">
+                      <div class="submenu-items">
+                        <!-- <h4>Hello World</h4> -->
+                        <ul>
+                          <li><a href="digital-outdoor">What is Digital outdoor services?</a>
+                          </li>
+                          <li><a href="digital-outdoor">Key Services offered</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="digital-outdoor">• Digital Billboard Advertising</a></li>
+                                  <li><a href="digital-outdoor">• Digital Screen Networks</a></li>
+                                  <li><a href="digital-outdoor">• Content Creation</a></li>
+                                  <li><a href="digital-outdoor">• Audience Targeting</a></li>
+                                  <li><a href="digital-outdoor">• Real-Time Content Management</a></li>
+                                  <li><a href="digital-outdoor">• Campaign Analytics</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="digital-outdoor">Why Choose Us?</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="digital-outdoor">• Expertise And Experience</a></li>
+                                  <li><a href="digital-outdoor">• Advanced Technology</a></li>
+                                  <li><a href="digital-outdoor">• Creative Capabilities</a></li>
+                                  <li><a href="digital-outdoor">• Network Reach</a></li>
+                                  <li><a href="digital-outdoor">• Customized Solutions</a></li>
+                                  <li><a href="digital-outdoor">• Proven Track Record</a></li>
+                                  <li><a href="digital-outdoor">• Customer Service</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blogs">Blogs</a>
+                    </li>
+                     <li class="nav-item">
+            <a class="nav-link active" href="Kyc_Page">KYC</a>
+          </li>
+                </ul>
+                <form class="d-flex">
+                    <a href="contact-us.html" class="btn btn-outline-success">Let's talk</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar-end -->
+
+    <div class="container banner-fix" style="padding: 50px;">
+        <h2>
+            Terms and Conditions
+        </h2>
+        <p class="text-secondary mt-2">These terms and conditions outline the rules and regulations for the use of
+            Adcliq360’s Website, located at <a href="https://Adcliq360.com/.">Adcliq360</a></p>
+        <p class="text-secondary">By accessing this website we assume you accept these terms and conditions. Do not
+            continue to use Adcliq360 if you do not agree to take all of the terms and conditions stated on this page.
+        </p>
+        <p class="text-secondary">The following terminology applies to these Terms and Conditions, Privacy Statement and
+            Disclaimer Notice and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this
+            website and compliant to the Company’s terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and
+            “Us”, refers to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves. All terms
+            refer to the offer, acceptance and consideration of payment necessary to undertake the process of our
+            assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s
+            needs in respect of provision of the Company’s stated services, in accordance with and subject to,
+            prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural,
+            capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same. Our
+            Terms and Conditions were created with the help of the Terms & Conditions Generator.
+        </p>
+        <h2 class="mt-3">Cookies</h2>
+        <!-- <h4>Interpretation</h4> -->
+        <p class="text-secondary">We employ the use of cookies. By accessing Adcliq360, you agreed to use cookies in
+            agreement with the Adcliq360’s Privacy Policy.
+            <br>
+            <br>
+            Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used
+            by our website to enable the functionality of certain areas to make it easier for people visiting our
+            website. Some of our affiliate/advertising partners may also use cookies.
+        </p>
+
+        <h4 class="mt-3">License</h4>
+        <p>Unless otherwise stated, Adcliq360 and/or its licensors own the intellectual property rights for all material
+            on Adcliq360. All intellectual property rights are reserved. You may access this from Adcliq360 for your own
+            personal use subjected to restrictions set in these terms and conditions.</p>
+        <p class="text-secondary">
+        <h5>You must not:</h5>
+        • Republish material from Adcliq360.com <br>
+        • Sell, rent or sub-license material from Adcliq360.com <br>
+        • Reproduce, duplicate or copy material from Adcliq360.com <br>
+        • Redistribute content from Adcliq360.com
+        <br>
+        <br>
+        </p>
+        <h4 class="mt-3">This Agreement shall begin on the date hereof.</h4>
+        <p class="text-secondary">Parts of this website offer an opportunity for users to post and exchange opinions and
+            information in certain areas of the website. Adcliq360 does not filter, edit, publish or review Comments
+            prior to their presence on the website. Comments do not reflect the views and opinions of Adcliq360,its
+            agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and
+            opinions. To the extent permitted by applicable laws, Adcliq360 shall not be liable for the Comments or for
+            any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or
+            appearance of the Comments on this website.
+
+            <br>
+            <br>
+            Adcliq360 reserves the right to monitor all Comments and to remove any Comments which can be considered
+            inappropriate, offensive or causes breach of these Terms and Conditions.
+        </p>
+
+        <h4>You warrant and represent that:</h4>
+
+        <p class="text-secondary" style="padding-left: 20px; line-height: 30px;">
+            • You are entitled to post the Comments on our website and have all necessary licenses and consents to do
+            so;
+            <br>
+            • The Comments do not invade any intellectual property right, including without limitation copyright,
+            patent or trademark of any third party;
+            <br>
+            • The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful
+            material which is an invasion of privacy
+            <br>
+            • The Comments will not be used to solicit or promote business or custom or present commercial
+            activities or unlawful activity.
+
+        </p>
+        <p class="text-secondary">You hereby grant Adcliq360 a non-exclusive license to use, reproduce, edit and
+            authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.</p>
+
+
+        <h2 class="mt-3">Hyperlinking to our Content</h2>
+        <p class="text-secondary" style="line-height: 30px;">The following organizations may link to our Website without
+            prior written approval:
+            <br>
+            • Government agencies;
+            <br>
+            • Search engines;
+            <br>
+            • News organizations;
+            <br>
+            • Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites
+            of other listed businesses; and
+            <br>
+            • System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and
+            charity fundraising groups which may not hyperlink to our Web site.
+            <br>
+            <br>
+            These organizations may link to our home page, to publications or to other Website information so long as
+            the link: <br>
+            (a) is not in any way deceptive; <br>
+            (b) does not falsely imply sponsorship, endorsement or approval
+            of the linking party and its products and/or services; and <br>
+            (c) fits within the context of the linking
+            party’s site.
+        </p>
+        <br>
+        <br>
+        <p class="text-secondary">We may consider and approve other link requests from the following types of
+            organizations:</p>
+        <p class="text-secondary" style="padding-left: 20px; line-height: 25px;">
+            • commonly-known consumer and/or business information sources;
+            • dot.com community sites;
+            • associations or other groups representing charities;
+            • online directory distributors;
+            • internet portals;
+            • accounting, law and consulting firms; and
+            • educational institutions and trade associations.
+
+        </p>
+        <p class="text-secondary">We will approve link requests from these organizations if we decide that:
+            <br>
+            (a) the link
+            would not make us look unfavorably to ourselves or to our accredited businesses;
+            <br>
+            (b) the organization does
+            not have any negative records with us;
+            <br>
+            (c) the benefit to us from the visibility of the hyperlink
+            compensates the absence of Adcliq360; and
+            <br>
+            (d) the link is in the context of general resource information.
+        </p>
+        <p>These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does
+            not falsely imply sponsorship, endorsement or approval of the linking party and its products or services;
+            and (c) fits within the context of the linking party’s site.</p>
+        <p class="text-secondary" style="padding-left: 20px;">If you are one of the organizations listed in paragraph 2
+            above and are interested in linking to our website, you must inform us by sending an e-mail to Adcliq360.
+            Please include your name, your organization name, contact information as well as the URL of your site, a
+            list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which
+            you would like to link. Wait 2-3 weeks for a response.
+
+            <br>
+            <br>
+        </p>
+        <p class="text-secondary">Approved organizations may hyperlink to our Website as follows:</p>
+        <br>
+
+        <p class="text-secondary">
+            • By use of our corporate name; or
+            <br>
+            • By use of the uniform resource locator being linked to; or
+            <br>
+            • By use of any other description of our Website being linked to that makes sense within the context and
+            format of content on the linking party’s site.
+            <br>
+            <br>
+            No use of Adcliq360’s logo or other artwork will be allowed for linking absent a trademark license
+            agreement.
+        </p>
+        <br>
+        <h2 class="mt-3">iFrames</h2>
+        <p class="text-secondary">Without prior approval and written permission, you may not create frames around our
+            Webpages that alter in any way the visual presentation or appearance of our Website.
+        </p>
+        <br>
+        <h2>Content Liability</h2>
+        <p class="text-secondary">We shall not be hold responsible for any content that appears on your Website. You
+            agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear
+            on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise
+            violates, or advocates the infringement or other violation of, any third party rights.
+        </p>
+
+
+        <h2>Reservation of Rights</h2>
+        <p class="text-secondary">We reserve the right to request that you remove all links or any particular link to
+            our Website. You approve to immediately remove all links to our Website upon request. We also reserve the
+            right to amen these terms and conditions and it’s linking policy at any time. By continuously linking to our
+            Website, you agree to be bound to and follow these linking terms and conditions.</p>
+
+        <br>
+        <h4>
+            Removal of links from our website
+        </h4>
+
+        <p class="text-secondary">If you find any link on our Website that is offensive for any reason, you are free to
+            contact and inform us any moment. We will consider requests to remove links but we are not obligated to or
+            so or to respond to you directly.
+
+            <br>
+            <br>
+            We do not ensure that the information on this website is correct, we do not warrant its completeness or
+            accuracy; nor do we promise to ensure that the website remains available or that the material on the website
+            is kept up to date.
+        </p>
+        <br>
+    </div>
+
+    <!-- foooter -->
+    <div class="container-fluid footer">
+        <div class="row justify-content-evenly">
+            <div class="col-md-3">
+                <img src="assets/Logos/logo black.png" alt="" class="img-fluid"
+                    style="width: 12.375rem; height:5.6875rem; flex-shrink: 0;">
+                <h5 class="mt-5">Follow us :</h5>
+                <a href="https://www.facebook.com/adcliq360" target="_blank" class="text-decoration-none "
+                    style="color: #F5760C;"><i class="bi bi-facebook fs-3 pe-2"></i></a>
+                <a href="https://www.instagram.com/adcliq360" target="_blank" class="text-decoration-none "
+                    style="color: #F5760C;"><i class="bi bi-instagram fs-3 px-2"></i></a>
+                <a href="https://www.youtube.com/@Adcliq360" target="_blank" class="text-decoration-none "
+                    style="color: #F5760C;"><i class="bi bi-youtube fs-3 px-2"></i></a>
+                <a href="https://www.linkedin.com/company/adcliq360/" target="_blank" class="text-decoration-none "
+                    style="color: #F5760C;"><i class="bi bi-linkedin fs-3 px-2"></i></a>
+            </div>
+            <div class="col-md-3">
+                <p><a class="footer-heading text-center text-decoration-none" href="#">our company</a></p>
+                <ul class="footer-links">
+                    <li>
+                        <a href="about-adcliq360.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Career</a>
+                    </li>
+                    <li><a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="privacy-policy.html">Terms And Conditions</a>
+                    </li>
+                    <li>
+                        <a href="privacy-policy.html">Disclaimer</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-3">
+                <p><a class="footer-heading-2 text-center text-decoration-none" href="#">Services</a></p>
+                <ul class="footer-links-2 ">
+                    <li>
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li>
+                        <a href="#">SEO Optimization</a>
+                    </li>
+                    <li><a href="#">Web Development</a>
+                    </li>
+                    <li>
+                        <a href="#">Google Analysis</a>
+                    </li>
+                    <li>
+                        <a href="#">Facebook Ads Manager</a>
+                    </li>
+                    <li>
+                        <a href="#">Google Ads Manager</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <p><a class="footer-heading-3 text-center text-decoration-none" href="#">About us</a></p>
+                <p class="footer-sub-heading-3">
+                    Adcliq360 is digital marketing agency based in Delhi NCR. A blend of years of knowledge and
+                    growth-driven
+                    methods to help brands survive in this digital age.
+                </p>
+                <a href="tel:9310825109" class="call-icon text-dark"><i class="bi bi-telephone-outbound"></i> +91
+                    9310825109</a><br><br>
+                <a href="mailto:info@adcliq360.com" class="call-icon text-dark"><i class="bi bi-send "></i>
+                    info@adcliq360.com</a>
+            </div>
+        </div>
+    </div>
+    <!---------foooter-end-->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/44711595.js"></script>
+    <!-- End of HubSpot Embed Code -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  -->
+</body>
+
+</html>

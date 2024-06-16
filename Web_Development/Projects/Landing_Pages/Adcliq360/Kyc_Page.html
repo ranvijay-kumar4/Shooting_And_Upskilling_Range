@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Adcliq360</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/adcliq360-favicon/favicon-32x32.png" width="32px"
+    height="auto">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="Kyc_Page.css">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="service-megamenu.css">
+    <link rel="stylesheet" href="bg-updates.css">
+
+    <style>
+        .hidden {
+            display: none;
+        }
+        
+.services-megamenu:hover .megamenu {
+    background:#fff;
+}
+
+@media screen and (max-width: 992px){
+   
+    .services-megamenu:hover .megamenu {
+        visibility:hidden;
+    }
+.services-megamenu .megamenu .megamenu-items,  .services-megamenu i { 
+    visibility: hidden;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h3 class="hidden" style="text-align: center; margin-top: 50px; margin-bottom: 50px;" id="thanks_msg_text">Thank
+            You for selecting Adcliq360. We will get back to you soon.</h3>
+        <h2>Company Details</h2>
+        <form action="https://kyc-page.onrender.com" method="post" enctype="multipart/form-data" id="kyc_form">
+            <input type="hidden" name="form_type" value="career_form" />
+            <div class="user_details">
+                <div class="input_box">
+                    <span class="title">Company Name</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Your Company's Name" name="company_name" required>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <span class="title">Phone Number</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="number" placeholder="Phone Number" maxlength="10" name="phone_number" required>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <span class="title">POC Phone Number</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="number" placeholder="POC Phone Number" maxlength="10" name="poc_phone_number"
+                            required>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <span class="title">POC Email</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="POC Email" name="poc_email" required>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <span class="title">Billing Address</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-house-user"></i>
+                        <input type="text" placeholder="Billing Address" name="billing_address" required>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <span class="title">PIN Code</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-envelopes-bulk"></i>
+                        <input type="number" placeholder="Address Postal Code" maxlength="6" name="pin" required>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <span class="title">Billing Phone Number</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="number" placeholder="Billing Phone Number" name="billing_phone_number"
+                            maxlength="10" required>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <span class="title">Billing Email</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Billing Email" name="billing_email" required>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <h2>KYC Details</h2>
+
+            <div class="user_details">
+                <div class="input_box">
+                    <span class="title">GST Number</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-file"></i>
+                        <input type="file" name="gst_no" id="file" placeholder="GST Number" min="15" max="15"
+                            accept="image/jpeg,image/png,application/pdf" capture required>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <span class="title">PAN Number</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-file"></i>
+                        <input type="file" name="pan_no" id="" placeholder="PAN Number" min="10" max="10"
+                            accept="image/jpeg,image/png,application/pdf" capture required>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <span class="title">Signature Authority ID Proof</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-id-card-clip"></i>
+                        <input type="file" name="id_proof" id="" placeholder="ID Proof"
+                            accept="image/jpeg,image/png,application/pdf" capture required>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <span class="title">Signed MSA</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-signature"></i>
+                        <input type="file" name="signed_msa" id="" placeholder="Signed MSA"
+                            accept="image/jpeg,image/png,application/pdf" capture required>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <span class="title">Other Documents (if any)</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-folder"></i>
+                        <input type="file" name="other_docs" id="" placeholder="Other Documents (optional)"
+                            accept="image/jpeg,image/png,application/pdf" capture>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="terms_policy">
+                <p>By clicking Submit, you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy
+                        Policy.</a> We will soon get in touch with you.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="submit()" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        document.getElementById('kyc_form').addEventListener('submit', async function (e) {
+            e.preventDefault(); // Prevent the default form submission behavior
+         
+            const formData = new FormData(this);
+    
+            try {
+                const response = await fetch('/', {
+                    method: 'POST',
+                    body: formData
+                });
+    
+                const result = await response.json();
+                if (response.ok) {
+                    alert(result.message);
+                } else {
+                    console.error('Error:', result);
+                    alert('Failed to send email');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Wait! Do not close or refresh the tab');
+            }
+        });
+    </script>
+</body>
+</html>

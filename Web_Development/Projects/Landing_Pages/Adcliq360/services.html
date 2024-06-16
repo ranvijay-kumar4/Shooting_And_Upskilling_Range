@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!----- Bootstrap Icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <!-----stylesheet-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="service-megamenu.css">
+    <link rel="stylesheet" href="bg-updates.css">
+
+  <title>Services</title>
+   <link rel="icon" type="image/png" sizes="32x32" href="assets/adcliq360-favicon/favicon-32x32.png" width="32px" height="auto">
+        <style>
+        
+        .submenu{
+    background-color: white;
+    position: absolute;
+   
+    right: 100%;
+    top: 10px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    border-radius: 30px;
+    opacity: 0; 
+    transition: 1s;
+    visibility: hidden;
+    box-shadow: 1px 1px 20px #abb4bb;
+}
+
+
+.submenu-menu{
+    background-color: white;
+    position: absolute;
+    right: 90%;
+    top: -10px;
+    width: 142%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    border-radius: 30px;
+    opacity: 0; 
+    transition: 1s;
+    visibility: hidden;
+    box-shadow: 1px 1px 20px #abb4bb;
+
+}
+
+.megamenu-items li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.submenu-items li:hover .submenu-menu {
+    opacity: 1;
+    visibility: visible;
+
+}
+         /*------------Navigation bar Fixed -----------------*/
+         .nav-fix
+         {
+            top: 0;
+             position: fixed;
+             width: 100%;
+                   z-index: 999;
+             
+         }
+         .banner-fix
+         {
+    margin-top: 10rem !important;
+}
+
+.services-megamenu:hover .megamenu {
+    background:#fff;
+}
+
+@media screen and (max-width: 992px){
+   
+    .services-megamenu:hover .megamenu {
+        visibility:hidden;
+    }
+.services-megamenu .megamenu .megamenu-items,  .services-megamenu i { 
+    visibility: hidden;
+}
+
+    
+     </style>
+</head>
+
+<body>
+  <!------navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light nav-fix">
+  <div class="container service-container">
+      <a class="navbar-brand" href="/"><img src="assets/Logos/logo black.png" alt="" class="img-fluid" width="185px"
+          height="auto"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-md-auto mb-2 mb-lg-0 me-md-5">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active px-md-3" href="about-adcliq360">About</a>
+          </li>
+                   <li class="nav-item services-megamenu">
+            <a class="nav-link active px-md-3" href="services">Services <i class="fa-solid fa-caret-down"
+                style="color: #000000;"></i></a>
+         <div class="megamenu">
+              <div class="megamenu-items">
+                <!-- <h4>Hello World</h4> -->
+                <ul>
+                  <li><a href="Social-media">Social Media Management</a>
+                    <div class="submenu">
+                      <div class="submenu-items">
+                        <!-- <h4>Hello World</h4> -->
+                        <ul>
+                          <li><a href="Social-media">Why Choose US ?</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="Social-media">• Expertise &amp; Experience</a></li>
+                                  <li><a href="Social-media">• Customised Solutions</a></li>
+                                  <li><a href="Social-media">• Proven Results</a></li>
+                                  <li><a href="Social-media">• Client Approach</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="digital-ad">Key Services offered</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="Social-media">• Social Media Strategy Development</a></li>
+                                  <li><a href="Social-media">• Content Creation And Management</a></li>
+                                  <li><a href="Social-media">• Social Media Advertising</a></li>
+                                  <li><a href="Social-media">• Community Management</a></li>
+                                  <li><a href="Social-media">• Analytics And Reporting</a></li>
+                                  <li><a href="Social-media">• Influencer Marketing</a></li>
+                                  <li><a href="Social-media">• Training And Consultancy</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="Social-media">Our SMM Services</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="Social-media">• Facebook Marketing</a></li>
+                                  <li><a href="Social-media">• Instagram Marketing</a></li>
+                                  <li><a href="Social-media">• YouTube Video Marketing</a></li>
+                                  <li><a href="Social-media">• LinkedIn B2B Marketing</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="digital-ad">Digital Ads OTT</a>
+                    <div class="submenu">
+                      <div class="submenu-items">
+                        <!-- <h4>Hello World</h4> -->
+                        <ul>
+                          <li><a href="Social-media">Why Choose US ?</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="digital-ad">• Expertise</a></li>
+                                  <li><a href="digital-ad">• Advanced Targeting</a></li>
+                                  <li><a href="digital-ad">• Innovative Solutions</a></li>
+                                  <li><a href="digital-ad">• Dynamic Ad Placement</a></li>
+                                  <li><a href="digital-ad">• Customized Campaigns</a></li>
+                                  <li><a href="digital-ad">• Comprehensive Reporting</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="digital-ad">Services offered</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>digital-ad
+                                  <li><a href="digital-ad">• Targeted Advertising</a></li>
+                                  <li><a href="digital-ad">• Increased Brand Awareness</a></li>
+                                  <li><a href="digital-ad">• Engaged Viewers</a></li>
+                                  <li><a href="digital-ad">• Multi-Screen Targeting</a></li>
+                                  <li><a href="digital-ad">• Data-Driven Campaigns</a></li>
+                                  <li><a href="digital-ad">• Performance Measurement</a></li>
+                                  <li><a href="digital-ad">• Premium Inventory Access</a></li>
+                                  <li><a href="digital-ad">• Campaign Management Expertise</a></li>
+                                  <li><a href="digital-ad">• Omnichannel Marketing Integration</a></li>
+                                  <li><a href="digital-ad">• Scalable Solutions</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="webDevelopment">Web Development</a>
+                    <div class="submenu">
+                      <div class="submenu-items">
+                        <!-- <h4>Hello World</h4> -->
+                        <ul>
+                          <li><a href="webDevelopment">Why Choose US ?</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="webDevelopment">• Expertise &amp; Experience</a></li>
+                                  <li><a href="webDevelopment">• Customised Solutions</a></li>
+                                  <li><a href="webDevelopment">• Client Approach</a></li>
+                                  <li><a href="webDevelopment">• Proven Results</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="webDevelopment">Key Services offered</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="webDevelopment">• Custom Website Development
+                                    </a></li>
+                                  <li><a href="webDevelopment">• E-Commerce Development</a></li>
+                                  <li><a href="webDevelopment">• CMS Development</a></li>
+                                  <li><a href="webDevelopment">• Responsive Web Design</a></li>
+                                  <li><a href="webDevelopment">• Web Application Development</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="webDevelopment">What You can build</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="webDevelopment">• Websites</a></li>
+                                  <li><a href="webDevelopment">• Web Portals</a></li>
+                                  <li><a href="webDevelopment">• Web Apps</a></li>
+                                  <li><a href="webDevelopment">• Online Stores</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="seo-adcliq360">Search Engine Optimization</a>
+                    <div class="submenu">
+                      <div class="submenu-items">
+                        <!-- <h4>Hello World</h4> -->
+                        <ul>
+                          <li><a href="seo-adcliq360">Why Choose US ?</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="seo-adcliq360">• Consult Our Experts!</a></li>
+                                  <li><a href="digital-ad">• Do More Than You Thought Possible!</a></li>
+                                  <li><a href="webDevelopment">• Achieve by optimising, personalising</a></li>
+
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="digital-ad">Steps for SEO </a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="seo-adcliq360">• Website Audit</a></li>
+                                  <li><a href="seo-adcliq360">• Keyword Research</a></li>
+                                  <li><a href="seo-adcliq360">• On-Page Optimization</a></li>
+                                  <li><a href="seo-adcliq360">• Competitor Analysis</a></li>
+                                  <li><a href="seo-adcliq360">• Quality Content Creation</a></li>
+                                  <li><a href="seo-adcliq360">• Technical SEO</a></li>
+                                  <li><a href="seo-adcliq360">• Local SEO</a></li>
+                                  <li><a href="seo-adcliq360">• Link Building</a></li>
+                                  <li><a href="seo-adcliq360">• Analytics And Monitoring</a></li>
+                                  <li><a href="seo-adcliq360">• Result</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="performance-marketing">Performance Marketing</a>
+                    <div class="submenu">
+                      <div class="submenu-items">
+                        <!-- <h4>Hello World</h4> -->
+                        <ul>
+                          <li><a href="performance-marketing">Why Choose US ?</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="performance-marketing">• Data-Driven Decisions</a></li>
+                                  <li><a href="performance-marketing">• Focus on Conversions</a></li>
+                                  <li><a href="performance-marketing">• Transparent Reporting</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="performance-marketing">Performance Marketing Channels</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="performance-marketing">• Lead Based Campaigns
+                                    </a></li>
+                                  <li><a href="performance-marketing">• Benefits Of Lead-Based Campaigns</a></li>
+                                  <li><a href="performance-marketing">• Qualified Lead Based Campaigns</a></li>
+                                  <li><a href="performance-marketing">• Benefits Of Tracking CPQL</a></li>
+                                  <li><a href="performance-marketing">• Installation Based Campaigns</a></li>
+                                  <li><a href="performance-marketing">• Benefits Of CPI</a></li>
+                                  <li><a href="performance-marketing">• Mille Based Campaigns</a></li>
+                                  <li><a href="performance-marketing">• Benefits Of CPM</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="digital-outdoor">Digital Outdoor</a>
+                    <div class="submenu">
+                      <div class="submenu-items">
+                        <!-- <h4>Hello World</h4> -->
+                        <ul>
+                          <li><a href="digital-outdoor">What is Digital outdoor services?</a>
+                          </li>
+                          <li><a href="digital-outdoor">Key Services offered</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="digital-outdoor">• Digital Billboard Advertising</a></li>
+                                  <li><a href="digital-outdoor">• Digital Screen Networks</a></li>
+                                  <li><a href="digital-outdoor">• Content Creation</a></li>
+                                  <li><a href="digital-outdoor">• Audience Targeting</a></li>
+                                  <li><a href="digital-outdoor">• Real-Time Content Management</a></li>
+                                  <li><a href="digital-outdoor">• Campaign Analytics</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="digital-outdoor">Why Choose Us?</a>
+                            <div class="submenu-menu">
+                              <div class="submenu-menu-items">
+                                <!-- <h4>Hello World</h4> -->
+                                <ul>
+                                  <li><a href="digital-outdoor">• Expertise And Experience</a></li>
+                                  <li><a href="digital-outdoor">• Advanced Technology</a></li>
+                                  <li><a href="digital-outdoor">• Creative Capabilities</a></li>
+                                  <li><a href="digital-outdoor">• Network Reach</a></li>
+                                  <li><a href="digital-outdoor">• Customized Solutions</a></li>
+                                  <li><a href="digital-outdoor">• Proven Track Record</a></li>
+                                  <li><a href="digital-outdoor">• Customer Service</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="blogs">Blogs</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link active" href="Kyc_Page">KYC</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+         <a href="contact-us" class="btn btn-outline-success">Let's talk</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <!----navbar -end----->
+<!-- <div class="container-fluid" style="margin-top: 10px;">
+   <img src="assets/servcies/Purple Minimalist App Developer New LinkedIn Banner.png" alt="" class="img-fluid" style="border-radius: 25px; "> 
+</div> -->
+<div class="container-fluid banner-fix">
+  <div class="row justify-content-center mt-5">
+    <div data-tilt data-tilt-glare class=" col-md-3 text-center mx-4 custom-card glassmorphism-card">
+      <div class="cards-title mt-2">
+          <img src="assets/servcies/icons8-web-developing-64.png" alt="" width="70px" height="70px">
+      </div>
+      <div class="card-text mt-4">
+          <h4 style="color: rgb(0, 60, 255);">SEO</h4>
+      </div>
+      <div class="card-pra mt-2">
+          <p style="font-size: 13px; color: #000;">Adcliq360's SEO services maximise your internet presence. Our experienced staff will increase your website's visibility, targeted traffic, and search engine rankings.
+            </p>
+      </div>
+      <div class="card-button">
+          <a href="seo-adcliq360"> <button type="button" class="card-btn">Read More</button></a>
+      </div>
+  </div>
+     <!-- Glassmorphism Card -->
+     <div data-tilt data-tilt-glare class="col-md-3 text-center mx-4 custom-card glassmorphism-card">
+      <div class="cards-title mt-2">
+          <img src="assets/servcies/icons8-positive-dynamic-48.png" alt="" width="70px" height="70px">
+      </div>
+      <div class="card-text mt-4">
+          <h4 style="color: rgb(0, 60, 255);">Social Media Marketing</h4>
+      </div>
+      <div class="card-pra mt-2">
+          <p style="font-size: 13px; color: #000;">Adcliq360's Social Media Marketing services boost your brand's online presence. Our experts create captivating social media campaigns </p>
+      </div>
+      <div class="card-button">
+        <button type="button" class="card-btn">Read More</button>
+      </div>
+  </div>
+  <div data-tilt data-tilt-glare class="col-md-3 text-center mx-4 custom-card glassmorphism-card">
+    <div class="cards-title mt-2">
+        <img src="assets/servcies/icons8-development-48.png" alt="" width="70px" height="70px">
+    </div>
+    <div class="card-text mt-4">
+        <h5 style="color: rgb(0, 60, 255);">Web and App Development</h5>
+    </div>
+    <div class="card-pra mt-2">
+        <p style="font-size: 13px; color: #000;">Adcliq360's Web and App Development services will transform your online presence. Our experienced developers create smooth, user-friendly digital experiences. </p>
+    </div>
+    <div class="card-button">
+             <button type="button" class="card-btn">Read More</button>
+    </div>
+</div>
+
+  </div>
+  <div class="row justify-content-center mt-5">
+    <div data-tilt data-tilt-glare class="col-md-3 text-center mx-4 custom-card glassmorphism-card"    >
+      <div class="cards-title mt-2">
+          <img src="assets/servcies/icons8-marketing-64.png" alt="" width="70px" height="70px">
+      </div>
+      <div class="card-text mt-4">
+          <h4 style="color: rgb(0, 60, 255);">Performance Marketing</h4>
+      </div>
+      <div class="card-pra mt-2">
+          <p style="font-size: 13px; color: #000;">Adcliq360's Performance Marketing services boost ROI and results. We specialise in data-driven, targeted campaigns with measurable results.</p>
+      </div>
+      <div class="card-button">
+          <a href="performance-marketing"> <button type="button" class="card-btn">Read More</button></a>
+      </div>
+  </div>
+     <!-- Glassmorphism Card -->
+     <div data-tilt data-tilt-glare class="col-md-3 text-center mx-4 custom-card glassmorphism-card">
+      <div class="cards-title mt-2">
+          <img src="assets/servcies/icons8-media-66.png" alt="" width="70px" height="70px">
+      </div>
+      <div class="card-text mt-4">
+          <h4 style="color: rgb(0, 60, 255);">Digital Ads OTT</h4>
+      </div>
+      <div class="card-pra mt-2">
+          <p style="font-size: 13px; color: #000;">Adcliq360's OTT Digital Ads services boost your advertising approach. We specialise in targeted, high-impact campaigns for streaming platforms and linked devices. </p>
+      </div>
+      <div class="card-button">
+        <button type="button" class="card-btn">Read More</button>
+      </div>
+  </div>
+  <div data-tilt data-tilt-glare class="col-md-3 text-center mx-4 custom-card glassmorphism-card">
+    <div class="cards-title mt-2">
+        <img src="assets/servcies/icons8-design-48.png" alt="" width="70px" height="70px">
+    </div>
+    <div class="card-text mt-4">
+        <h4 style="color: rgb(0, 60, 255);">Digital Outdoor</h4>
+    </div>
+    <div class="card-pra mt-2">
+        <p style="font-size: 13px; color: #000;">Adcliq360 Digital Outdoor services boost brand awareness beyond the internet. We use the latest technology to seamlessly incorporate digital aspects into... </p>
+    </div>
+    <div class="card-button">
+             <button type="button" class="card-btn">Read More</button>
+    </div>
+</div>
+
+  </div>
+</div>
+
+
+ <!-- foooter -->
+ <div class="container-fluid footer">
+    <div class="row justify-content-evenly">
+      <div class="col-md-3">
+        <img src="assets/Logos/logo black.png" alt="" class="img-fluid"
+          style="width: 12.375rem; height:5.6875rem; flex-shrink: 0;">
+        <h5 class="mt-5">Follow us :</h5>
+        <a href="https://www.facebook.com/adcliq360" target="_blank" class="text-decoration-none " style="color: #F5760C;"><i
+            class="bi bi-facebook fs-3 pe-2"></i></a>
+        <a href="https://www.instagram.com/adcliq360" target="_blank" class="text-decoration-none " style="color: #F5760C;"><i
+            class="bi bi-instagram fs-3 px-2"></i></a>
+        <a href="https://www.youtube.com/@Adcliq360" target="_blank" class="text-decoration-none " style="color: #F5760C;"><i
+            class="bi bi-youtube fs-3 px-2"></i></a>
+        <a href="https://www.linkedin.com/company/adcliq360/" target="_blank" class="text-decoration-none " style="color: #F5760C;"><i
+            class="bi bi-linkedin fs-3 px-2"></i></a>
+      </div>
+      <div class="col-md-3">
+        <p><a class="footer-heading text-center text-decoration-none" href="#">our company</a></p>
+        <ul class="footer-links">
+          <li>
+            <a href="about-adcliq360">About us</a>
+          </li>
+          <li>
+            <a href="#">Career</a>
+          </li>
+          <li><a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="services">Services</a>
+          </li>
+              <li>
+          <a href="privacy-policy">Privacy Policy</a>
+        </li>
+                            <li>
+                        <a href="Tems_Condition.html">Terms And Conditions</a>
+                    </li>
+                    <li>
+                        <a href="Disclaimer.html">Disclaimer</a>
+                    </li>
+        </ul>
+
+      </div>
+      <div class="col-md-3">
+        <p><a class="footer-heading-2 text-center text-decoration-none" href="#">Services</a></p>
+        <ul class="footer-links-2 ">
+          <li>
+            <a href="#">Digital Marketing</a>
+          </li>
+          <li>
+            <a href="#">SEO Optimization</a>
+          </li>
+          <li><a href="#">Web Development</a>
+          </li>
+          <li>
+            <a href="#">Google Analysis</a>
+          </li>
+          <li>
+            <a href="#">Facebook Ads Manager</a>
+          </li>
+          <li>
+            <a href="#">Google Ads Manager</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <p><a class="footer-heading-3 text-center text-decoration-none" href="#">About us</a></p>
+        <p class="footer-sub-heading-3">
+          Adcliq360 is digital marketing agency based in Delhi NCR. A blend of years of knowledge and growth-driven
+          methods to help brands survive in this digital age.
+        </p>
+        <a href="tel:9310825109" class="call-icon text-dark"><i class="bi bi-telephone-outbound"></i> +91
+          9310825109</a><br><br>
+        <a href="mailto:info@adcliq360.com" class="call-icon text-dark"><i class="bi bi-send "></i>
+          info@adcliq360.com</a>
+      </div>
+    </div>
+  </div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/44711595.js"></script>
+<script src="web-audit.js"></script> 
+<script src="have-a-project.js"></script>
+<!-- End of HubSpot Embed Code -->
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  -->
+  <script src="tilt.js"></script>
+</body>
+
+</html>
