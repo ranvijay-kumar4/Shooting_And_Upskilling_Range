@@ -73,7 +73,7 @@ body {
         left: 40px;
         position: absolute;
     }
-    
+
     button:hover {
         background: #374773;
     }
@@ -87,6 +87,7 @@ body {
     h2 {
         font-family: "Salsa", cursive;
         color: #021864;
+        font-size: 1.8rem;
 
         span {
             color: #92C644;
@@ -98,7 +99,7 @@ body {
 
         li {
             list-style: none;
-            margin: 2rem 5px 3rem 4rem;
+            margin: 2rem 5px 2rem 4rem;
 
             img {
                 position: absolute;
@@ -110,11 +111,11 @@ body {
             }
 
             .img2 {
-                top: 5rem;
+                top: 4rem;
             }
 
             .img3 {
-                top: 11rem;
+                top: 9rem;
             }
 
         }
@@ -124,13 +125,19 @@ body {
             font-weight: bolder;
             font-size: 1.5rem;
         }
-    }   
+    }
+
+    .btn{
+        position: relative;
+        z-index: 10;
+    }
 }
+
 .content-body::before {
     content: "";
     display: block;
     position: absolute;
-    top: 29rem;
+    top: 36.9rem;
     left: 0;
     width: 100%;
     height: 311px;
@@ -240,7 +247,8 @@ body {
     padding: 10px;
     border-radius: 20px;
 }
-.btn:hover{
+
+.btn:hover {
     background: #92C644;
 }
 
