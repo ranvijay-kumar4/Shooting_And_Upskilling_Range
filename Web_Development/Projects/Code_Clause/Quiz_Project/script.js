@@ -113,7 +113,7 @@ function showQuestion() {
         button.addEventListener('click', selectAnswer);
         choicesElement.appendChild(button);
     });
-}
+} 
 
 function resetState() {
     while (choicesElement.firstChild) {
