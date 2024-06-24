@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.embeddedhtml": "html",
         "array": "cpp",
         "deque": "cpp",
         "string": "cpp",
@@ -7,7 +8,8 @@
         "vector": "cpp",
         "initializer_list": "cpp",
         "iostream": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "ostream": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "liveServer.settings.port": 5501
