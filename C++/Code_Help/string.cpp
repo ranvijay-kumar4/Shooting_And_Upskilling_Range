@@ -56,6 +56,28 @@ bool check_Palindrome(char inp[])
     return true;
 }
 
+void toUppercase(char inp[])
+{
+    for (int i = 0; i < strlen(inp); i++)
+    {
+        if (inp[i] >= 'a' && inp[i] <= 'z')
+        {
+            inp[i] = inp[i] - 'a' + 'A';
+        }
+    }
+}
+
+void toLowercase(char inp[])
+{
+    for (int i = 0; i < strlen(inp); i++)
+    {
+        if (inp[i] >= 'A' && inp[i] <= 'Z')
+        {
+            inp[i] = inp[i] + 'a' - 'A';
+        }
+    }
+}
+
 int main()
 {
 
@@ -120,5 +142,29 @@ int main()
 
     // cout << check_Palindrome(inp);
 
+    // -------------------------------------------------------------------------
+
+    // Convert to UpperCase
+
+    // char inp[20];
+    // cin >> inp;
+
+    // toUppercase(inp);
+    // cout << inp << endl;
+
+    // toLowercase(inp);
+    // cout << inp << endl;
+
+    // -------------------------------------------------------------------------
+
+    // String : Dynamic Data type that holds character data
+
+    string str;
+
+    // cin >> str;
+    // cout << str << endl;
+
+    getline(cin, str);
+    cout << str << endl; // This will take entire line as input
     return 0;
 }
