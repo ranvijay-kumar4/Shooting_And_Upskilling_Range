@@ -159,12 +159,15 @@ int main()
 
     // String : Dynamic Data type that holds character data
 
-    string str;
+    // string str;
 
     // cin >> str;
     // cout << str << endl;
 
-    getline(cin, str);
-    cout << str << endl; // This will take entire line as input
+    // getline(cin, str);
+    // cout << str << endl; // This will take entire line as input
+
+
+
     return 0;
 }
