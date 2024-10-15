@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G&Y Interiors - Green Young</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="Assets/Tab_logo.png" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #01662F;
+            --secondary-color: #FFC21F;
+            --btn-color: #f54;
+            --light: #fff;
+            --bglight: #d2cdcd;
+            --btn-color1-hover: rgb(201, 64, 51);
+            --btn-color2: #076aab;
+            --btn-color2-hover: #0f4b72;
+            --dark: #000;
+            ---bg-opacity: rgba(0, 0, 0, 0.6);
+        }
+
+        body,
+        h1,
+        p {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url(Assets/thank_You.png);
+            background-size: cover;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(---bg-opacity);
+
+        }
+
+
+        .container {
+            text-align: center;
+            background: var(--light);
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.42);
+            max-width: 1000px;
+            width: 100%;
+            z-index: 2;
+            margin: 1rem;
+        }
+
+
+        .thank-you h1 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            font-family: 'Lobster';
+        }
+
+        .text {
+
+           margin-inline: auto;
+            p {
+                margin-bottom: 20px;
+                font-size: 1.2rem;
+                color: var(--dark);
+                text-align: left;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+
+
+
+        .home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--btn-color);
+            color: var(--light);
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: var(--btn-color1-hover);
+        }
+
+        @media (max-width: 600px) {
+            .container{
+                margin: 1rem 1.5rem;
+                        }
+            .thank-you h1 {
+                font-size: 2rem;
+            }
+
+            .thank-you p {
+                font-size: 1rem;
+            }
+
+            .home-button {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="thank-you">
+            <h1>Thank You for Choosing Green and Young!</h1>
+            <div class="text">
+                <p><span>We're thrilled to have the opportunity to help you create your dream space!</span>
+                    <br><br>
+
+                    We want to express our heartfelt gratitude for entrusting us with your interior design needs. Our
+                    team
+                    of experts is dedicated to delivering exceptional service and transforming your space into a
+                    stunning
+                    sanctuary.
+                    <br><br>
+                    Your trust in our company means the world to us, and we promise to:
+                    <br><br>
+                    - Listen attentively to your vision and goals
+                    <br> - Provide personalized design solutions tailored to your unique style
+                    <br> - Deliver top-notch quality and attention to detail
+                    <br> - Ensure a seamless and stress-free design experience
+                    <br><br>
+                    Thank you for choosing us as your interior design partner! We can't wait to get started on this
+                    exciting
+                    journey with you.
+                    .
+                </p>
+            </div>
+            <a href="index.html" class="home-button"> Let's Get Started on Your Dream Project!</a>
+        </div>
+    </div>
+</body>
+
+</html>

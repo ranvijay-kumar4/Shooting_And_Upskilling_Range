@@ -26,14 +26,102 @@ Date : 09th January 2024
 Q 7. Search in a Sorted array. [33]
 (https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/)
 
-Date :
-Q 8.
-()
+Date : 01st October 2024
+Q 8. Remove all adjacent duplicates in string. [1047]
+(https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/submissions/)
 
-Date :
-Q 9.
-()
+Date : 02nd October 2024
+Q 9. Palindromic Substring. [647]
+(https://leetcode.com/problems/palindromic-substrings/submissions/)
 
 Date :
 Q 10.
+()
+
+Date :
+Q 11.
+()
+
+Date :
+Q 12.
+()
+
+Date :
+Q 13.
+()
+
+Date :
+Q 14.
+()
+
+Date :
+Q 15.
+()
+
+Date :
+Q 16.
+()
+
+Date :
+Q 17.
+()
+
+Date :
+Q 18.
+()
+
+Date :
+Q 19.
+()
+
+Date :
+Q 20.
+()
+
+Date :
+Q 20.
+()
+
+Date :
+Q 21.
+()
+
+Date :
+Q 22.
+()
+
+Date :
+Q 23.
+()
+
+Date :
+Q 24.
+()
+
+Date :
+Q 25.
+()
+
+Date :
+Q 26.
+()
+
+Date :
+Q 27.
+()
+
+Date :
+Q 28.
+()
+
+Date :
+Q 29.
+()
+
+Date :
+Q 30.
+()
+
+Date :
+Q 31.
 ()

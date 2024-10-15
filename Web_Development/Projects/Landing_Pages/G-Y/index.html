@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G&Y Interiors - Green Young</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="Assets/Tab_logo.png" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+        <div class="logo"><a href="#"><img src="Assets/Logo.png" alt="LOGO"></a></div>
+        <div class="call-button">
+            <a href="tel:+917303161655 ">Call Us at +91 7303161655</a>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section class="home">
+        <video autoplay muted loop class="Video">
+            <source src="Assets/vd1.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="home-content">
+            <h1>Design Your Home <br> With The <span>Experts</span></h1>
+            <h5>3D Design & Measurement</h5>
+        </div>
+        <div class="form">
+            <h3>Get Your Designer <br> Home Now</h3>
+            <form action="mail.php" method="POST">
+                <input name="name" type="text" placeholder=" NAME " required>
+                <input id="phone" pattern="[0-9]{10}" required name="phone" type="tel" placeholder=" PHONE NUMBER "
+                    maxlength="10" required>
+                <input name="email" type="email" placeholder=" EMAIL " required>
+
+                <div id="dropdown">
+                    <select class="dropdown-list" name="htype" id="house-type" required>
+                        <option class="default" value="">HOUSE TYPE</option>
+                        <option value="3-BHK">3 BHK</option>
+                        <option value="4-BHK">4 BHK</option>
+                        <option value="Pent-House">PENT HOUSE</option>
+                        <option value="Villa">VILLA</option>
+                    </select>
+                    <select class="dropdown-list" name="location" id="Location" required>
+                        <option class="default" value="">LOCATION</option>
+                        <option value="Noida">NOIDA</option>
+                        <option value="Greater-Noida">GREATER NOIDA</option>
+                        <option value="Raj-Nagar">RAJ NAGAR</option>
+                        <option value="Gajiabad">GHAZIABAD</option>
+                    </select>
+                </div>
+                <input class="submit-btn" type="submit" value="Book Free Consultation" />
+            </form>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="About" class="about-us">
+        <h1>About Us</h1>
+        <div class="text-content">
+            <h2>Creative solutions by professional designers</h2>
+            <p>G&Y Interior is a team of passionate and experienced interior designers dedicated to crafting exceptional
+                living spaces that reflect your unique style and needs. With over 5 years of experience and a keen eye
+                for detail, we transform houses into homes. We believe in creating functional and beautiful spaces that
+                inspire joy and reflect your personality.<br>
+                <button id="open-popup" class="abt-btn">Know More <img src="Assets/Arrow 1.png" alt=""></button>
+            </p>
+        </div>
+        <div id="popup-container">
+            <div id="popup-form">
+                <h3>Get Your Designer <br> Home Now</h3>
+                <form action="mail.php" method="POST">
+                    <input name="name" type="text" placeholder=" NAME " required>
+                    <input id="phone" pattern="[0-9]{10}" required name="phone" type="tel" placeholder=" PHONE NUMBER "
+                        maxlength="10" required>
+                    <input name="email" type="email" placeholder=" EMAIL " required>
+
+                    <div id="dropdown">
+                        <select class="dropdown-list" name="htype" id="house-type" required>
+                            <option class="default" value="">HOUSE TYPE</option>
+                            <option value="3-BHK">3 BHK</option>
+                            <option value="4-BHK">4 BHK</option>
+                            <option value="Pent-House">PENT HOUSE</option>
+                            <option value="Villa">VILLA</option>
+                        </select>
+                        <select class="dropdown-list" name="location" id="Location" required>
+                            <option class="default" value="">LOCATION</option>
+                            <option value="Noida">NOIDA</option>
+                            <option value="Greater-Noida">GREATER NOIDA</option>
+                            <option value="Raj-Nagar">RAJ NAGAR</option>
+                            <option value="Gajiabad">GHAZIABAD</option>
+                        </select>
+                    </div>
+                    <input class="submit-btn" type="submit" value="Book Free Consultation" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDER SECTION -->
+    <div id="Slider" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="Assets/Abt-2.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="Assets/Abt-9.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="Assets/Abt-10.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="Assets/Abt-3.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="Assets/Abt-8.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="Assets/Abt-5.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="Assets/Abt-11.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="Assets/Abt-7.jpg" />
+            </div>
+            <!-- <div class="swiper-slide">
+                <img src="Assets/Abt-8.jpg" />
+            </div>-->
+            <div class="swiper-slide">
+                <img src="Assets/Abt-12.png" />
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
+    <!-- CUSTOMER SATISFACTION SECTION -->
+    <section class="customer">
+        <h2>Extremely High Standard of Customer Satisfaction</h2>
+        <div class="steps">
+            <div class="img-text"><img src="Assets/3.1.png" alt="">Meet <br>a Designer</div>
+            <div class="img-text"><img src="Assets/3.2.png" alt="">(10% Payment) <br>Book a renovation</div>
+            <div class="img-text"><img src="Assets/3.3.png" alt="">(50% Payment) <br>Middle of Execution</div>
+            <div class="img-text"><img src="Assets/3.4.png" alt="">(100% Payment) <br>Finall Installations</div>
+            <div class="img-text"><img src="Assets/3.5.png" alt="">Move in & <br>Enyoy!</div>
+        </div>
+    </section>
+
+
+    <!-- VIDEO SECTION -->
+    <section class="video-column">
+        <div class="column left-column">
+            <h2>Ensuring a Safe Experience From Design to Installation</h2>
+            <p>When you give your home the Livspace touch, you get both beauty and functionality. We employ
+                state-of-the-art technology to ensure your home features a flawless look that lasts a very long time.
+            </p>
+            <button id="open-popup1" class="video-btn">Know More <img src="Assets/Arrow 1.png" alt=""></button>
+        </div>
+        <div id="popup-container1">
+            <div id="popup-form1">
+                <h3>Get Your Designer <br> Home Now</h3>
+                <form action="mail.php" method="POST">
+                    <input name="name" type="text" placeholder=" NAME " required>
+                    <input id="phone" pattern="[0-9]{10}" required name="phone" type="tel" placeholder=" PHONE NUMBER "
+                        maxlength="10" required>
+                    <input name="email" type="email" placeholder=" EMAIL " required>
+
+                    <div id="dropdown">
+                        <select class="dropdown-list" name="htype" id="house-type" required>
+                            <option class="default" value="">HOUSE TYPE</option>
+                            <option value="3-BHK">3 BHK</option>
+                            <option value="4-BHK">4 BHK</option>
+                            <option value="Pent-House">PENT HOUSE</option>
+                            <option value="Villa">VILLA</option>
+                        </select>
+                        <select class="dropdown-list" name="location" id="Location" required>
+                            <option class="default" value="">LOCATION</option>
+                            <option value="Noida">NOIDA</option>
+                            <option value="Greater-Noida">GREATER NOIDA</option>
+                            <option value="Raj-Nagar">RAJ NAGAR</option>
+                            <option value="Gajiabad">GHAZIABAD</option>
+                        </select>
+                    </div>
+                    <input class="submit-btn" type="submit" value="Book Free Consultation" />
+                </form>
+            </div>
+        </div>
+
+
+        <div class="column right-column">
+            <video autoplay muted loop class="Video">
+                <source src="Assets/mb.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </section>
+
+    <br>
+    <!-- NUMBER SECTION -->
+    <section id="counter" class="numbers2">
+        <div class="data">
+
+            <div class="count-heading">
+                <p><span class="count" data-count="25">1</span>+</p>
+                <div>Interior Design</div>
+            </div>
+
+            <div class="vl"></div>
+            <div class="hl"></div>
+
+            <div class="count-heading">
+                <p><span class="count" data-count="93">1</span>+</p>
+                <div>Architecture</div>
+            </div>
+
+            <div class="vl"></div>
+            <div class="hl"></div>
+
+            <div class="count-heading">
+                <p><span class="count" data-count="48">1</span>+</p>
+                <div>Construction</div>
+            </div>
+
+            <div class="vl"></div>
+            <div class="hl"></div>
+
+            <div class="count-heading">
+                <p><span class="count" data-count="68">1</span>+</p>
+                <div>Project Done</div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <!-- EVERYSTYLE SECTION -->
+    <section class="everystyle">
+        <h2>Home For EveryStyle</h2>
+        <p>Superior finish, trendy design quality modules at affordable price</p>
+
+        <!-- <div class="grid-container">
+            <img src="Assets/4.2.jpg" alt="">
+            <img src="Assets/4.2.jpg" alt="">
+            <img src="Assets/4.2.jpg" alt="">
+            <img src="Assets/4.2.jpg" alt="">
+            <img src="Assets/4.2.jpg" alt="">
+            <img src="Assets/4.2.jpg" alt="">
+
+        </div> -->
+
+        <div class="grid-container">
+            <div class="grid-item"><img src="Assets/Abt-1.png" alt=""></div>
+            <div class="grid-item"><img src="Assets/Abt-4.png" alt=""></div>
+            <div class="grid-item"><img src="Assets/Abt-6.png" alt=""></div>
+            <div class="grid-item"><img src="Assets/Abt-11.jpg" alt=""></div>
+            <div class="grid-item"><img src="Assets/Abt-12.jpg" alt=""></div>
+            <div class="grid-item"><img src="Assets/Abt-5.jpg" alt=""></div>
+        </div>
+
+    </section>
+
+    <!-- DESIGN SECTION -->
+    <section class="design">
+        <!-- <h2>Design for Every Budget</h2>
+        <form action="https://formsubmit.co/Interiors@greenandyoung.in" method="POST">
+            <input name="NAME" type="text" placeholder="NAME">
+            <input name="PHONE NUMBER" type="number" placeholder="MOBILE NUMBER">
+            <img src="Assets/Design_img.png" alt="">
+            <p><input name="WHATSAPP UPDATE" type="checkbox" class="checkbox">Send Updates on Whatsapp</p>
+            <button type="submit">Submit</button>
+        </form> -->
+        <img src="Assets/design-img.png" alt="">
+    </section>
+
+    <!-- TESTIMONIAL SECTION -->
+    <section id="Testimonial" class="testimonials">
+        <h2>Here’s What our satisfied clients are saying</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <div class="content">
+                    <p>"The decorators at Green and Young Interior Designer have done marvelous job for our office.
+                        Their
+                        commitment towards work and professional approach helped us to complete our office well in
+                        time."
+                    </p>
+                </div>
+                <br>
+                <div class="client-info">
+                    <h3>Nisha</h3>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="content">
+                    <p>"We are delighted by the final product delivered by Green and Young. The interiors of the entire
+                        building are perfect. The team was very sensitive to our design needs and went to extra-ordinary
+                        lengths to develop the appropriate design for us."
+                    </p>
+                </div>
+                <div class="client-info">
+                    <h3>Pooja</h3>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="content">
+                    <p>"Green and Young Interior Designer is specialized in providing elegant and stunning interior
+                        designing service for both residential and commercial projects. We are well experienced with
+                        various
+                        international styles..."
+                    </p>
+                </div>
+                <br>
+                <div class="client-info">
+                    <h3>Mukesh</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- CONSULTATION SECTION -->
+    <section id="why-us" class="consult">
+        <div class="consult-content">
+            <h1>We Can build you the Home <br>of Your Dream</h1>
+            <h5>Book a free consultation with our expert interior designers</h5>
+            <a href="tel:+917303161655 "><button type="submit">Start Your Design Journey</button></a>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- WHY US SECTION -->
+    <section class="why-us">
+        <div class="column left-column">
+            <p><span>Why Choose Us</span><br>We believe that every client has unique requirements and taste. In order to
+                support that we add up the best and most creative designs in order to make your dream become reality.
+            </p>
+        </div>
+        <div class="column center-column">
+            <p><span>Client Worked With</span><br>We have completed almost 20+ projects in Delhi NCR</p>
+        </div>
+        <div class="column right-column">
+            <p><span>Office Address </span><br>C619, KLJ Building, Noida One, Rasoolpur Nawada, Industrial Area, Sector
+                62, Noida, Uttar Pradesh 201306</p>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="footer-column1">
+            <p><span>G&Y Interiors <br></span> G&Y Interior is a team of passionate and experienced interior designers
+                dedicated to crafting exceptional living spaces that reflect your unique style and needs. With over 5
+                years of experience and a keen eye for detail, we transform houses into homes. We believe in creating
+                functional and beautiful spaces that inspire joy and reflect your personality.  </p>
+        </div>
+        <div class="footer-column2">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#About">About Us</a></li>
+                <li><a href="#Slider">Our Designs</a></li>
+                <li><a href="#why-us">Why G&Y</a></li>
+                <li><a href="#Testimonial">Testimonial</a></li>
+            </ul>
+        </div>
+        <div class="footer-column3">
+            <ul>
+                <li><a href="https://www.greenandyoung.in/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="https://www.greenandyoung.in/terms-and-conditions/">Terms and Condition</a></li>
+                <li><a href="tel:+917303161655 ">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column4">
+
+            <h3>Get In Touch with Us Now</h3>
+            <form action="mail.php" method="POST">
+                <input name="name" type="text" placeholder=" NAME " required>
+                <input id="phone" pattern="[0-9]{10}" required name="phone" type="tel" placeholder=" PHONE NUMBER "
+                    maxlength="10" required>
+                <input name="email" type="email" placeholder=" EMAIL " required>
+
+                <div id="dropdown">
+                    <select class="dropdown-list" name="htype" id="house-type" required>
+                        <option class="default" value="">HOUSE TYPE</option>
+                        <option value="3-BHK">3 BHK</option>
+                        <option value="4-BHK">4 BHK</option>
+                        <option value="Pent-House">PENT HOUSE</option>
+                        <option value="Villa">VILLA</option>
+                    </select>
+                    <select class="dropdown-list" name="location" id="Location" required>
+                        <option class="default" value="">LOCATION</option>
+                        <option value="Noida">NOIDA</option>
+                        <option value="Greater-Noida">GREATER NOIDA</option>
+                        <option value="Raj-Nagar">RAJ NAGAR</option>
+                        <option value="Gajiabad">GHAZIABAD</option>
+                    </select>
+                </div>
+                <input class="submit-btn" type="submit" value="Book Free Consultation" />
+            </form>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="https://www.linkedin.com/in/ranvijay-kumar4/" style="text-decoration: none; color: blue;">Created
+        by Ranvijay Kumar</a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
