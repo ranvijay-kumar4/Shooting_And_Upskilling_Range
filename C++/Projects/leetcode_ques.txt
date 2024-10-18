@@ -34,13 +34,13 @@ Date : 02nd October 2024
 Q 9. Palindromic Substring. [647]
 (https://leetcode.com/problems/palindromic-substrings/submissions/)
 
-Date :
-Q 10.
-()
+Date : 17th October 2024
+Q 10. Two Sum. [167]
+(https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/submissions/)
 
-Date :
-Q 11.
-()
+Date : 18th October 2024
+Q 11. Three Sum. [15]
+(https://leetcode.com/problems/3sum/submissions/)
 
 Date :
 Q 12.
