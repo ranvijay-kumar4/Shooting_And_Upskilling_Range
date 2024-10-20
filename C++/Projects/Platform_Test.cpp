@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <vector>
 #include <string>
+#include <limits>
 
 using namespace std;
 
@@ -22,6 +23,8 @@ int main()
 
     cout << "Hello User" << endl;
 
+    // -------------------------------------------------------------------------------------------------
+
     // GFG Pattern Printing Question
 
     // Input : N = 3
@@ -36,6 +39,8 @@ int main()
     //     }
     //     cout << " ";
     // }
+
+    // -------------------------------------------------------------------------------------------------
 
     // GFG Rearrange the array
 
@@ -59,6 +64,8 @@ int main()
     //         i++;
     //     }
     // }
+
+    // -------------------------------------------------------------------------------------------------
 
     // Removing Duplicate elements of string leetcode question 1047
     // string ans = "", s = "abbaca";
@@ -98,20 +105,72 @@ int main()
     // }
     // cout << ans;
 
+    // -------------------------------------------------------------------------------------------------
+
     // Finding Palindromic SubString leetcode question 647
 
-    string s = "abc";
-    int count = 0, n = s.length();
+    // string s = "abc";
+    // int count = 0, n = s.length();
 
-    for (int center = 0; center < n; center++)
-    {
-        int oddAns = expandIndex(s, center, center);
-        count += oddAns;
+    // for (int center = 0; center < n; center++)
+    // {
+    //     int oddAns = expandIndex(s, center, center);
+    //     count += oddAns;
 
-        int evenAns = expandIndex(s, center, center + 1);
-        count += evenAns;
-    }
-    cout << count;
+    //     int evenAns = expandIndex(s, center, center + 1);
+    //     count += evenAns;
+    // }
+    // cout << count;
+
+    // -------------------------------------------------------------------------------------------------
+
+    // Removing Duplicates from a Sorted Array Leetcode question 26
+
+    // vector<int> nums{0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+    // vector<int> nums{1, 1, 2};
+
+    // int i = 0, j = 1, n = nums.size();
+    // while (j < n)
+    // {
+    //     if (nums[i] == nums[j])
+    //     {
+    //         j++;
+    //     }
+    //     else
+    //     {
+    //         i++;
+    //         nums[i] = nums[j];
+    //     }
+    // }
+    // cout << i + 1;
+
+    // -------------------------------------------------------------------------------------------------
+
+    // GFG Largest Element in Array
+    // vector<int> nums{1, 8, 7, 56, 90};
+    // vector<int> nums {5, 5, 5, 5, 5};
+    // vector<int> nums{10};
+    // int max = 0, i = 0, n = nums.size();
+    // if (n == 1)
+    // {
+    //     max = nums[i];
+    // }
+    // else
+    // {
+    //     for (; i < n; i++)
+    //     {
+    //         if (nums[i] > max)
+    //         {
+    //             max = nums[i];
+    //         }
+    //     }
+    // }
+
+    // cout << max << endl;
+
+    // -------------------------------------------------------------------------------------------------
+
+    // Removing Elements from Array LeetCode Question [27]
 
     cout << endl
          << "Thank You" << endl;
