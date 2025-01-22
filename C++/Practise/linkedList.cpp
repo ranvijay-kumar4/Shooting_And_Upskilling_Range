@@ -162,6 +162,48 @@ void insertAtAnyPosition(Node *&head, Node *&tail, int position, int data)
     prev->next = c;
 };
 
+void deleteNode(Node *&head, Node *&tail, int position){
+    int len = findLength(head);
+
+    if(head == NULL){
+        cout << "Empty" << endl;
+        return;
+    }
+
+    if(position == 1){
+        Node *temp = head;
+        head = head->next;
+        temp->next = NULL;
+        delete temp;
+        return;
+    }
+
+    if(position == len){
+        int i = 1;
+        Node *prev = head;
+        while(i < position - 1){
+            prev = prev->next;
+            i++;
+        }
+        prev->next = NULL;
+        Node *temp = tail;
+        tail = prev;
+        delete temp;
+        return;
+    }
+
+    int i = 1;
+    Node *prev = head;
+    while(i < position - 1){
+        prev = prev->next;
+        i++;
+    }
+    Node *curr = prev->next;
+    prev->next = curr->next;
+    curr->next = NULL;
+    delete curr;
+};
+
 int main()
 {
     // First Node - Dynamically
@@ -248,14 +290,21 @@ int main()
     printLinkedList(head);
     cout << endl;
 
-    // insertAtAnyPosition(head, tail, 0, 5);
-    // insertAtAnyPosition(head, tail, 9, 5);
+    insertAtAnyPosition(head, tail, 0, 6);
+    insertAtAnyPosition(head, tail, 9, 7);
     insertAtAnyPosition(head, tail, 5, 5);
-
 
     cout << endl;
     cout << "After Insertion at position : ";
     printLinkedList(head);
+
+    // Deletion of Node
+    cout << endl;
+    cout << endl;
+    deleteNode(head, tail, 5);
+    cout << "After Deletion at position : ";
+    printLinkedList(head);
+    cout << endl;
 
     return 0;
 }
