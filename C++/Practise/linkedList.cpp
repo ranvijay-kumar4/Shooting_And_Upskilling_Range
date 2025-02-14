@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// Singly LinkedList
 class Node
 {
 public:
@@ -20,6 +21,11 @@ public:
     {
         this->data = data;
         this->next = NULL;
+    }
+
+    ~Node()
+    {
+        cout << "Destructor : " << this->data;
     }
 };
 
@@ -162,15 +168,18 @@ void insertAtAnyPosition(Node *&head, Node *&tail, int position, int data)
     prev->next = c;
 };
 
-void deleteNode(Node *&head, Node *&tail, int position){
+void deleteNode(Node *&head, Node *&tail, int position)
+{
     int len = findLength(head);
 
-    if(head == NULL){
+    if (head == NULL)
+    {
         cout << "Empty" << endl;
         return;
     }
 
-    if(position == 1){
+    if (position == 1)
+    {
         Node *temp = head;
         head = head->next;
         temp->next = NULL;
@@ -178,10 +187,12 @@ void deleteNode(Node *&head, Node *&tail, int position){
         return;
     }
 
-    if(position == len){
+    if (position == len)
+    {
         int i = 1;
         Node *prev = head;
-        while(i < position - 1){
+        while (i < position - 1)
+        {
             prev = prev->next;
             i++;
         }
@@ -194,7 +205,8 @@ void deleteNode(Node *&head, Node *&tail, int position){
 
     int i = 1;
     Node *prev = head;
-    while(i < position - 1){
+    while (i < position - 1)
+    {
         prev = prev->next;
         i++;
     }
@@ -202,6 +214,17 @@ void deleteNode(Node *&head, Node *&tail, int position){
     prev->next = curr->next;
     curr->next = NULL;
     delete curr;
+};
+
+Node *reverse(Node *&prev, Node *&curr)
+{
+    if (curr == NULL)
+        return prev;
+
+    Node *forward = curr->next;
+    curr->next = prev;
+
+    reverse(curr, forward);
 };
 
 int main()
@@ -301,10 +324,22 @@ int main()
     // Deletion of Node
     cout << endl;
     cout << endl;
-    deleteNode(head, tail, 5);
+    // deleteNode(head, tail, 5);
     cout << "After Deletion at position : ";
     printLinkedList(head);
     cout << endl;
+
+    // Reverse a Linked List
+    cout << endl;
+    cout << endl;
+    cout << "Before Reverse : ";
+    printLinkedList(head);
+    Node *prev = NULL;
+    Node *curr = head;
+    head = reverse(prev, curr);
+    cout << endl;
+    cout << "After Reverse : ";
+    printLinkedList(head);
 
     return 0;
 }
