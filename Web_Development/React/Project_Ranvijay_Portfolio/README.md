@@ -15,7 +15,7 @@ Welcome to my **personal portfolio website**! This project showcases my skills, 
 - **Hosting:** Vercel 
 
 ## 🎯 Live Demo
-🔗 [Check out my portfolio](https://ranvijay-portfolio.vercel.app/) *(Replace with your actual link)*
+🔗 [Check out my portfolio](https://ranvijay-portfolio.vercel.app/) 
 
 ## 📂 Project Structure
 ```bash

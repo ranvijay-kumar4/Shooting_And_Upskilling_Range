@@ -16,7 +16,7 @@ Welcome to **GitHub Explorer**, a web application that allows users to search an
 - **Hosting:** Vercel 
 
 ## 🎯 Live Demo
-🔗 [Check out GitHub Explorer](https://yourgithubexplorer.com) *(Replace with actual link)*
+🔗 [Check out GitHub Explorer](https://yourgithubexplorer.com) 
 
 ## 📂 Project Structure
 ```bash
