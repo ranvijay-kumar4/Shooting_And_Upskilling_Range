@@ -1,5 +1,6 @@
-
-        // {
-        //     slow = slow->next;
-        //     fast = fast->next;
-        // }
+    // Printing Stack
+    while (!s.empty())
+    {
+        cout << s.top() << " ";
+        s.pop();
+    }
