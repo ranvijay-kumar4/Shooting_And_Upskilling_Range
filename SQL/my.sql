@@ -156,3 +156,43 @@ INSERT INTO table_name
 VALUES (value1, value2, ...);
 -- Generally used for inserting single record
 
+-- PRIMARY KEY : It is a unique identifier for each record in a table. It ensures that no two records can have the same primary key value. Eg. - PRIMARY KEY (id), PRIMARY KEY (id, name)
+
+-- It is a column or set of column in a table that uniquely identifies each row.
+-- Must be unique and cannot contain NULL values.
+
+-- FOREIGN KEY : A foreign key is a column or set of columns in one table that refers to the primary key in another table. It establishes a relationship between the two tables.
+
+-- NOT NULL : A constraint that ensures a column cannot have NULL values. It is used to enforce that a field must contain a value.
+
+-- UNIQUE : A constraint that ensures all values in a column are unique. It allows NULL values but no duplicate values.
+
+-- DEFAULT : A constraint that provides a default value for a column when no value is specified during insertion. e.g.- salary INT DEFAULT 25000
+
+-- CHECK : A constraint that ensures all values in a column satisfy a specific condition. It is used to enforce data integrity. E.g. - CHECK (age >= 18)
+
+CREATE DATABASE college1;
+
+USE college1;
+
+CREATE TABLE student (
+	rollno INT PRIMARY KEY,
+	name VARCHAR(50),
+	marks INT NOT NULL,
+	grade VARCHAR(1),
+	city VARCHAR(20)
+);
+
+INSERT INTO student (rollno, name, marks, grade, city) 
+VALUES 
+(101, "anil", 78, "C", "Pune"),
+(102, "bhumika", 93, "A", "Pune"),
+(103, "chetan", 85, "B", "Pune"),
+(104, "dhruv", 96, "A", "Pune"),
+(105, "emanuel", 12, "F", "Pune"),
+(106, "farah", 82, "B", "Pune"),
+(107, "sumit", 95, "A", "Pune"),
+(108, "sunil", 20, "E", "Pune"),
+(109, "akash", 80, "C", "Pune");
+
+

@@ -1,0 +1,12 @@
+{
+  "name": "second",
+  "version": "1.0.0",
+  "description": "Building HTTP Server Video No 7 Piyush Garg Master Nodejs playlist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
