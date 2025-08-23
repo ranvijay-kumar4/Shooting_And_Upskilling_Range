@@ -568,3 +568,253 @@ const myUrl = url.parse(req.url, true);
 ```
 
 # Express.JS
+Express.js is a minimal and flexible Node.js web application framework. It provides a set of features to help you build web and mobile applications easily.
+It removes the clumsy codes of creating the server.
+
+## Why is Express.js needed?
+
+- Simplifies server creation: Node.js can create servers, but Express.js makes it much easier and less verbose.
+- Routing: Express.js helps you define routes for handling different HTTP requests (GET, POST, etc.).
+- Middleware support: You can use middleware to handle requests, responses, authentication, logging, and more.
+- Scalability: It’s lightweight and unopinionated, so you can structure your app as you like.
+- Community and ecosystem: Many plugins and middleware are available for common tasks.
+
+Summary:
+Express.js makes building web servers with Node.js faster, easier, and more organized.
+
+#### Install
+    npm i express
+    
+Version will be updated in package.json
+
+Example:
+``` Javascript
+// Simple Express.js server
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(3000, () => {
+  console.log('Server running on port 3000');
+});
+```
+
+``` Javascript
+const express = require('express');
+const app = express();
+// App is handler function for creating server
+app.get('/', (req, res) => {
+
+    return res.send("Hello From Home Page");
+});
+app.get('/about', (req, res) => {
+
+    return res.send("Hello From About Page");
+});
+
+const myServer = http.createServer(app)
+
+
+myServer.listen(8000, () => console.log("Server Running"));
+
+// Similarly for post method
+app.post('/about', (req, res) => {});
+
+// Handling Query
+app.get('/about', (req, res) => {
+
+    // return res.send("Hello From About Page" + req.query.name + 'You are' + req.query.age);
+    return res.send(`Hello + ${req.query.name} + You are + ${req.query.age}`);
+
+    // On website -> /about?name=ranvijay&age=23
+    // Hello ranvijay You are 23
+
+    // Also this line is removed by
+    // myServer.listen(8000, () => console.log("Server Running"));
+
+    app.listen(8000, () => console.log("Server Started!"));
+
+    // Also we no longer need this line
+    // const http = require("http");
+
+});
+```
+
+#### Basic Routing looks like
+    app.METHOD(PATH, HANDLER)
+
+- After npm start
+- on Terminal Server Running, On LocalHost:8000 Hello from home page and /about Hello from about page will be visible
+
+    npm uninstall url
+- we no longer needed url
+
+## Versioning
+- From package.json
+
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+
+^5.1.0
+- third part [0] -> Minor Fixes (Optional) -> means there is minor fixes done which if updated then its okay if not then also okay
+
+- second part [1] -> Recommended Bug Fix (security fix) -> major critical bug fix happened, you have to update
+
+- first part [5] -> Major Release/update or breaking update - recommended not to update the pre existing code
+
+    npm i express
+This will always download the most latest version, to download a specific version of express
+
+    npm i express@4.18.2
+
+Versions are available at npm js website
+
+- carrot symbol[^] -> will not update the major release and major release will be locked and whenever npm will be updated and minor and bug fixes will be downloaded automatically.
+
+- Curly sign[~] -> will only update the third part automatically
+
+# REST / RESTFULL API
+
+Type of API with standards / Rules / Best Practices
+
+1. Server - Client Architecture : Both server and client should be independent
+
+Database(server) sends raw data in HTMl or JSON format then client will decide what have to do
+
+If you know that on the client side there will be browser definitely then data will be sent in HTML as it will be fast and doesn't need processing and data will be available ob screen.
+
+If you have cross platform like mobile devices, ios, smart devices then data will be sent in JSON
+
+2. Always respect all HTTP Methods 
+[GET, POST, PUT, PATCH, DELETE]:
+
+GET - Read user data and return
+POST - Handle new user
+PATCH - Update USER
+
+# Building REST API
+Create Folder Third -> npm init -> index.js
+Change the start script in package.json for npm start command
+// Will use https://www.mockaroo.com/ for fake data -> Will provide fake entries in MOCK_DATA.json file
+
+``` Javascript
+// in MOCK_DATA.json
+[
+    {
+        "id": 1,
+        "first_name": "Edith",
+        "last_name": "Rowen",
+        "email": "erowen0@walmart.com",
+        "gender": "Female",
+        "job_title": "Health Coach II"
+    },
+]
+
+
+const express = require("express");
+const users = require("./MOCK_DATA.json")
+
+const app = express();
+const PORT = 8000;
+
+app.listen(PORT, () => console.log(`Server Started at ${PORT}`));
+// Change the start script in package.json for npm start command
+```
+
+- HTML FORMAT 
+``` javascript
+app.get('/users', (req, res ) => {
+    const html = `
+    <ul>
+        ${users.map((user) => `<li>${user.first_name}</li>`).join('')}
+    </ul>
+    `
+});
+```
+
+- JSON FORMAT 
+``` javascript
+const express = require("express");
+const users = require("./MOCK_DATA.json")
+
+const app = express();
+const PORT = 8000;
+
+// -> /api/name -> is good practice of representation
+
+// For all users -> api/users
+app.get('/api/users', (req, res ) => {
+    return res.json(users);
+    // This will provide JSON data on webpage
+});
+
+// :variable_name ->Dynamic Path Parameters anything written after :
+
+// For individual user api/users/12
+app.get('/api/users/:id', (req, res ) => {
+    const id = Number(req.params.id);
+    const user = user.find((user) => user.id === id);
+
+    return res.json(user);
+});
+
+
+app.post('/api/users', (req, res) => {
+    return res.json({status : "pending"});
+});
+
+
+app.patch('/api/users/:id', (req, res) => {
+    return res.json({status : "pending"});
+});
+
+
+app.delete('/api/users/:id', (req, res) => {
+    return res.json({status : "pending"});
+});
+
+
+app.listen(PORT, () => console.log(`Server Started at ${PORT}`));
+```
+
+- JSON FORMAT 
+``` javascript
+app.get('/api/users/:id', (req, res ) => {
+    const id = Number(req.params.id);
+    const user = user.find((user) => user.id === id);
+
+    return res.json(user);
+});
+
+app.patch('/api/users/:id', (req, res) => {
+    return res.json({status : "pending"});
+});
+
+
+app.delete('/api/users/:id', (req, res) => {
+    return res.json({status : "pending"});
+});
+
+// -> /api/users/:id -> this is common so we can route above all as
+
+app.route('/api/users/:id')
+.get((req, res ) => {
+    const id = Number(req.params.id);
+    const user = user.find((user) => user.id === id);
+
+    return res.json(user);
+})
+.patch((req, res) => {
+    return res.json({status : "pending"});
+})
+.delete((req, res) => {
+    return res.json({status : "pending"});
+});
+
+```
+
+## POSTMAN

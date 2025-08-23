@@ -1,7 +1,7 @@
 {
-  "name": "second",
+  "name": "third",
   "version": "1.0.0",
-  "description": "Building HTTP Server Video No 7 Piyush Garg Master Nodejs playlist",
+  "description": "Building REST API Using Node.js and Express.js By Piyush Garg Video no 13 playlist Master Node.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
