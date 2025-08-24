@@ -440,6 +440,10 @@ myServer.listen(8000, () => console.log("Server Running"));
 - res.end will provide response to server and end after sending message.
 -  If you change anything on file it will not be reflected on browser we have to restart the server
 
+- To avoid restarting server again and again after every change install nodemon
+    npm i nodemon
+- Change node index.js to nodemon index.js and run first time npm start and it will keep tracking it whenever there is change it will reload the server.
+
 
 ### Always use Non - Blocking task
 
@@ -733,6 +737,7 @@ app.get('/users', (req, res ) => {
         ${users.map((user) => `<li>${user.first_name}</li>`).join('')}
     </ul>
     `
+    res.send(html);
 });
 ```
 
@@ -804,7 +809,7 @@ app.delete('/api/users/:id', (req, res) => {
 app.route('/api/users/:id')
 .get((req, res ) => {
     const id = Number(req.params.id);
-    const user = user.find((user) => user.id === id);
+    const user = users.find((user) => user.id === id);
 
     return res.json(user);
 })
@@ -818,3 +823,379 @@ app.route('/api/users/:id')
 ```
 
 ## POSTMAN
+Postman is a popular API development tool that allows you to test, document, and automate RESTful APIs.
+
+### Key Features
+
+- **Send HTTP requests**: Easily send GET, POST, PUT, PATCH, DELETE, and other HTTP requests to your API endpoints.
+- **View responses**: Inspect status codes, headers, and response bodies.
+- **Environment variables**: Store and reuse variables like base URLs or tokens.
+- **Collections**: Organize requests into collections for better management and sharing.
+- **Automation**: Write tests and automate API workflows.
+
+### Usage Example
+
+1. Download and install Postman from [postman.com](https://www.postman.com/).
+2. Open Postman and create a new request.
+3. Set the request type (GET, POST, etc.) and enter your API endpoint (e.g., `http://localhost:8000/api/users`).
+4. Click **Send** to view the response from your server.
+
+### Why use Postman?
+
+- Simplifies manual API testing.
+- Helps debug and validate API endpoints.
+- Useful for front-end and back-end developers to collaborate and test APIs independently.
+
+### Example: Testing a POST request
+
+To test a POST endpoint (e.g., `/api/users`):
+
+- Select **POST** as the method.
+- Enter the endpoint URL.
+- Go to the **Body** tab, select **raw**, and choose **JSON**.
+- Enter your JSON payload, e.g.:
+    ```json
+    {
+        "first_name": "Ranvijay",
+        "last_name": "Kumar",
+        "email": "0201@gmail.com",
+        "gender": "Male",
+        "job_title": "Developer",
+    }
+    ```
+- Click **Send** to submit the request and view the response.
+
+Postman is essential for efficient API development and debugging.
+
+``` Javascript []
+const PORT = 8000;
+
+// Middleware
+app.use(express.urlencoded({extended: false}));
+
+app.post('/api/users', (req, res) => {
+    const body = req.body;
+    // All the data from frontend is present in body
+
+    users.push(body);
+    // To write file we require fs
+    
+    return res.json({status : "pending"});
+});
+```
+
+- POST Request will update now
+
+``` Javascript
+app.post('/api/users', (req, res) => {
+    const body = req.body;
+    // All the data from frontend is present in body
+
+    users.push({...body, id: users.length + 1});
+    // To write file we require fs
+
+    fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data)=>{
+        return res.json({status: "pending"});
+    })
+
+    // return res.json({status : "pending"});
+});
+
+// This will update  as
+    {
+        "first_name": "Ranvijay",
+        "last_name": "Kumar",
+        "email": "0201@gmail.com",
+        "gender": "Male",
+        "job_title": "Developer",
+        "id": 1001
+    }
+
+// Update The pending message 
+    fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data)=>{
+        return res.json({status: "Success", id: users.length + 1});
+    });
+
+```
+
+## Express Middleware
+Is a function that gets executed on each request and response, It can forward the request to the server or can return the request and ends the cycle on having any problem.
+Also holds the access to next middleware.
+
+     Middleware created by .use -> with handler function -> request, response, next middleware
+
+     Middleware runs line by line -> upper will run first then next 
+
+``` Javascript
+app.use((req, res, next) => {
+    console.log("Hello From M 1");
+});
+
+// On Postman -> http://localhost:8000/api/users
+
+// This will run the code endlessly as there is not any response nor the next fun called, its holding the request
+// Therefore we will update as 
+
+app.use((req, res, next) => {
+    console.log("Hello From M 1");
+    return res.json({msg : "Hello from M1"});
+});
+
+// This will return directly and we will see {msg : "Hello from M1"} in postman terminal. User is not able to reach the route. To forward the request we will update as
+
+app.use((req, res, next) => {
+    console.log("Hello From M 1");
+    next();
+});
+// This will pass to next one
+
+app.use((req, res, next) => {
+    console.log("Hello From M 2");
+    return res.end("Hey");
+});
+
+// This will end
+// Hello From M 1 ->Terminal
+// Hello From M 2 ->Terminal
+// Hey ->Terminal Postman
+
+// To reach the routes we update as
+app.use((req, res, next) => {
+    console.log("Hello From M 2");
+    next();
+});
+
+app.use((req, res, next) => {
+    console.log("Hello From M 1");
+    req.myUserName = "Ranvijay";
+    next();
+});
+
+app.use((req, res, next) => {
+    console.log("Hello From M 2");
+    next();
+});
+// myUserName is accessed by 2nd one too and we can change the request and response objects
+
+
+
+app.use((req, res, next) => {
+    app.use((req, res, next) => {
+        fs.appendFile("log.txt", `\n ${Date.now()} : ${req.method} : ${req.path}`, (err, data) => {
+            next();
+        });
+    });
+});
+
+// this will create log.txt file with date, method type, path
+```
+
+## HTTP Headers
+It is a field of an HTTP request or response that passes additional context and metadata about the request or response.
+It describes which type of data is it, its size etc. It carries information for the response and request Body
+
+``` Javascript
+app.get("/api/users", (req,res)=>{
+res.setHeaders("X-MyName", "Ranvijay");
+// include X in your custom header
+    return res.json(users);
+});
+```
+
+### HTTP Status Code
+It indicates whether  specific HTTP request is completed successfully or not.
+
+e.g. - 404 Not Found
+
+1. (100 - 199) -> if starts from 1 means Informational responses
+2. (200 - 299) -> if starts from 1 means Successful responses
+3. (300 - 399) -> if starts from 1 means Redirection responses
+4. (400 - 499) -> if starts from 1 means Client Error responses
+5. (500 - 599) -> if starts from 1 means Server Error responses
+
+``` Javascript
+return res.json({status: "success", id: users.length});
+// Change this to 
+return res.status(201).json({status: "success", id: users.length});
+
+
+
+app.post('/api/users', (req, res) => {
+    const body = req.body;
+
+
+    if(!body ||
+        !body.first_name ||
+        !body.last_name ||
+        !body.email ||
+        !body.gender ||
+        !body.job_title
+    ){
+        return res.status(400).json({msg: "All fields req..."});
+    }
+    
+    users.push({ ...body, id: users.length + 1 });
+
+    fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data) => {
+        return res.json({ status: "Success", id: users.length });
+    });
+});
+
+
+app.route('/api/users/:id')
+    .get(async(req, res) => {
+        const id = Number(req.params.id);
+        const user = users.find((user) => user.id === id);
+        if(!user)
+            return res.status(404).json({error: "User not found"});
+        
+        return res.json(user);
+    })
+
+```
+
+# Mongo DB
+- No-SQL document based database
+- Strong support for aggregation Pipes
+- Works on BSON format
+
+## Installation
+- Install Mongo DB & its Shell
+- Open Cmd -> Mongosh
+- Provide link 127.0.0
+
+- Open Terminal
+    npm i mongoose
+
+
+
+``` Javascript
+const mongoose = require("mongoose");
+// Include Mongoose
+// create Scheme
+const userSchema = new mongoose.Schema({
+    firstName: {
+        type: String,
+        required: true,
+    },
+    lastName: {
+        type: String,
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true,
+    },
+    jobTitle: {
+        type: String,
+    },
+    gender: {
+        type: String,
+    },
+});
+
+// Define Model
+const User = mongoose.model("user", userSchema);
+
+
+// Connect Mongoose
+mongoose
+.connect('mongodb://127.0.0.1:27017/ranvijay-app1')
+.then(() => console.log("MongoDB Connected"))
+.catch(err => console.log('Mongo Error', err));
+
+```
+On Terminal it will show 
+    Server Started at 8000
+    MongoDB Connected
+
+On CMD
+    show dbs -> list of db
+    use db_name -> select db
+    show collections -> collections in Db
+    db.users.find({}) -> find in db
+
+Commented codes are previous and non commented are the new ones
+``` Javascript
+    // fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data) => {
+    //     return res.json({ status: "Success", id: users.length });
+    // });
+
+    // We Do not have to do this above more instead we use
+    
+    
+    // This will create user
+    const result = await User.create({
+        firstName: body.first_name,
+        lastName: body.last_name,
+        email: body.email,
+        gender: body.gender,
+        jobTitle: body.job_title
+    }, {timestamps: true});
+
+    console.log(result);
+
+    return res.status(201).json({msg: "Success"});
+
+    // return res.json({status : "pending"});
+
+    // Comment this line -> // const users = require("./MOCK_DATA.json");
+
+
+    
+// app.route('/api/users/:id')
+//     .get((req, res) => {
+//         const id = Number(req.params.id);
+//         const user = users.find((user) => user.id === id);
+
+        // if(!user)
+        //     return res.status(404).json({error: "User not found"});
+        
+        // return res.json(user);
+//     })
+//     .patch((req, res) => {
+//         return res.json({ status: "pending" });
+//     })
+//     .delete((req, res) => {
+//         return res.json({ status: "pending" });
+//     });
+
+
+app.route('/api/users/:id')
+    .get(async(req, res) => {
+        const user = await User.findById(req.params.id);
+        if(!user)
+            return res.status(404).json({error: "User not found"});
+
+        return res.json(user);
+    })
+    .patch(async(req, res) => {
+        await User.findByIdAndUpdate(req.params.id, {lastName: 'Changed'})
+        return res.json({ status: "pending" });
+    })
+    .delete(async(req, res) => {
+        await User.findByIdAndDelete(req.params.id, "Success")
+        return res.json({ status: "pending" });
+    });
+
+
+// HTML FORMAT
+
+app.get('/users', async(req, res) => {
+    const allDbUsers = await User.find({});
+    const html = `
+    <ul>
+        ${users.map((user) => `<li>${user.firstName} - ${user.email}</li>`).join('')}
+    </ul>
+    `
+    res.send(html);
+});
+
+app.get('/api/users', async(req, res) => {
+    const allDbUsers = await User.find({});
+
+    res.setHeader("X-MyName", "Ranvijay");
+    return res.json(allDbUsers);
+});
+
+```
