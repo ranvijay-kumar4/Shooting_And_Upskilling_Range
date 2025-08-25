@@ -1187,7 +1187,7 @@ app.get('/users', async(req, res) => {
     <ul>
         ${users.map((user) => `<li>${user.firstName} - ${user.email}</li>`).join('')}
     </ul>
-    `
+    `;
     res.send(html);
 });
 
@@ -1197,5 +1197,27 @@ app.get('/api/users', async(req, res) => {
     res.setHeader("X-MyName", "Ranvijay");
     return res.json(allDbUsers);
 });
+
+```
+
+## Model View Controller
+
+Create Models, controllers, views, routes folder
+create user.js in models, routes
+
+router > user.js
+``` Javascript
+
+```
+
+
+router > user.js
+``` Javascript
+
+```
+
+
+router > user.js
+``` Javascript
 
 ```
