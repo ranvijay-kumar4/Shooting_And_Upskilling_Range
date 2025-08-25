@@ -979,13 +979,11 @@ app.use((req, res, next) => {
 
 
 
-app.use((req, res, next) => {
     app.use((req, res, next) => {
         fs.appendFile("log.txt", `\n ${Date.now()} : ${req.method} : ${req.path}`, (err, data) => {
             next();
         });
     });
-});
 
 // this will create log.txt file with date, method type, path
 ```
@@ -1199,25 +1197,11 @@ app.get('/api/users', async(req, res) => {
 });
 
 ```
-
+ 
 ## Model View Controller
 
 Create Models, controllers, views, routes folder
 create user.js in models, routes
 
-router > user.js
-``` Javascript
+Its a way to segregate the tasks in different files
 
-```
-
-
-router > user.js
-``` Javascript
-
-```
-
-
-router > user.js
-``` Javascript
-
-```
