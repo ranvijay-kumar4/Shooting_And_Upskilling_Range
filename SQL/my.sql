@@ -196,3 +196,65 @@ VALUES
 (109, "akash", 80, "C", "Pune");
 
 
+SELECT name, marks FROM student;
+
+-- * is used to select all columns from a table.
+
+SELECT * FROM student;
+
+SELECT city FROM student;
+
+SELECT DISTINCT city FROM student;
+-- DISTINCT is used to select unique values from a column.
+
+
+SELECT name, marks FROM student WHERE marks >= 80;
+-- WHERE clause is used to filter records based on a specified condition.
+
+SELECT * FROM student WHERE marks > 80 AND city = 'Pune';
+
+SELECT * FROM student WHERE marks + 10 > 100;
+
+SELECT * FROM student WHERE marks >= 80 OR city = 'Pune';
+
+SELECT * FROM student WHERE marks >= 80 AND city = 'Pune';
+
+SELECT * FROM student WHERE marks BETWEEN 80 AND 90;
+
+SELECT * FROM student WHERE city IN ('Pune', 'Mumbai');
+-- In operator is used to filter records based on a list of values.
+
+SELECT * FROM student WHERE city NOT IN ('Pune', 'Mumbai');
+-- NOT IN operator is used to filter records that do not match any value in a list.
+
+SELECT * FROM student LIMIT 5;
+-- Limit : It is used to specify the maximum number of records/rows to return in a result set.
+
+SELECT * FROM student ORDER BY marks;
+-- Order By : It is used to sort the result set in ascending or descending order based on one or more columns.
+
+-- Aggregate Functions in SQL: That perform calculations on a set of values and return a single value.
+
+-- COUNT(): Returns the number of rows that match a specified condition.
+SELECT COUNT(*) FROM student;
+SELECT COUNT(DISTINCT city) FROM student;
+
+-- SUM(): Returns the total sum of a numeric column.
+SELECT SUM(marks) FROM student;
+SELECT SUM(DISTINCT marks) FROM student;
+
+-- AVG(): Returns the average value of a numeric column.
+SELECT AVG(marks) FROM student;
+SELECT AVG(DISTINCT marks) FROM student;
+
+-- MAX(): Returns the maximum value in a column.
+SELECT MAX(marks) FROM student;
+
+-- MIN(): Returns the minimum value in a column.
+SELECT MIN(marks) FROM student;
+
+-- Group By : It is used to group rows that have the same values in specified columns into summary rows, like "find the number of students in each city".
+SELECT city, COUNT(name) FROM student GROUP BY city;
+SELECT city, name, COUNT(name) FROM student GROUP BY city, name;
+
+SELECT grade, AVG(marks) FROM student GROUP BY city ORDER BY AVG(marks) DESC;
