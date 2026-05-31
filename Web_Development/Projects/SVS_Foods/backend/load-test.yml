@@ -1,0 +1,21 @@
+config:
+  target: "http://localhost:5000"
+  phases:
+    - duration: 60
+      arrivalRate: 5
+      rampTo: 50
+      name: "Ramp up load"
+    - duration: 120
+      arrivalRate: 50
+      name: "Sustain concurrent load (500 virtual users total)"
+  defaults:
+    headers:
+      Content-Type: "application/json"
+scenarios:
+  - name: "Health check checks & Menu items list loading"
+    flow:
+      - get:
+          url: "/health"
+      - think: 1
+      - get:
+          url: "/api/menu?limit=8&availableOnly=false"
