@@ -1,0 +1,65 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum DocumentStatus {
+  UPLOADED
+  OCR_PROCESSING
+  AI_PROCESSING
+  VALIDATION_PENDING
+  REVIEW_PENDING
+  APPROVED
+  REJECTED
+  ERROR
+}
+
+enum ReviewStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+model Document {
+  id         String          @id @default(cuid())
+  fileName   String
+  filePath   String
+  uploadedAt DateTime        @default(now())
+  status     DocumentStatus
+  rawOcrText String?
+  records    MachineRecord[]
+}
+
+model MachineRecord {
+  id               String       @id @default(cuid())
+  date             String?
+  shift            String?
+  employeeNo       String?
+  operationCode    String?
+  machineNo        String?
+  workOrderNo      String?
+  quantityProduced Float?
+  timeTakenHours   Float?
+  fieldConfidences Json         // { date: number, shift: number, employeeNo: number, operationCode: number, machineNo: number, workOrderNo: number, quantityProduced: number, timeTakenHours: number }
+  validationStatus String       // "VALID" | "INVALID"
+  validationErrors Json         // string[]
+  reviewStatus     ReviewStatus
+  documentId       String
+  document         Document     @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  createdAt        DateTime     @default(now())
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  recordId  String
+  fieldName String
+  oldValue  String?
+  newValue  String?
+  editedAt  DateTime @default(now())
+}
